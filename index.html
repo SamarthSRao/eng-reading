@@ -1,4 +1,209 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Eng reading</title><style>body{font-family:Georgia,serif;font-size:1.1em;line-height:1.5;max-width:40em;margin:auto;padding:0 .6em}a{color:#000}h1,h2{border-bottom:1px solid #999}pre,code{white-space:pre-wrap}</style></head><body><a id="top"></a><h1>Eng reading</h1><p>Last updated 12 Oct 2026, 01:08 PM IST</p><ul><li><a href="#d2026-10-12-1242">2026-10-12 12:42 IST</a></li><li><a href="#d2026-10-12">2026-10-12 08:42 IST</a></li><li><a href="#d2026-10-11-2042">2026-10-11 20:42 IST</a></li><li><a href="#d2026-10-11-1642">2026-10-11 16:42 IST</a></li><li><a href="#d2026-10-11-1242">2026-10-11 12:42 IST</a></li><li><a href="#d2026-10-11">2026-10-11 08:42 IST</a></li><li><a href="#d2026-10-11-0230">2026-10-11 02:30 IST</a></li><li><a href="#d2026-10-09">2026-10-09 08:42 IST</a></li><li><a href="#d2026-10-08">2026-10-08 08:42 IST</a></li><li><a href="#d2026-10-07">2026-10-07 08:42 IST</a></li><li><a href="#d2026-10-06">2026-10-06 08:42 IST</a></li><li><a href="#big">Big projects</a></li></ul><h1 id="d2026-10-12-1242">2026-10-12 12:42 IST</h1>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Eng reading</title><style>body{font-family:Georgia,serif;font-size:1.1em;line-height:1.5;max-width:40em;margin:auto;padding:0 .6em}a{color:#000}h1,h2{border-bottom:1px solid #999}pre,code{white-space:pre-wrap}</style></head><body><a id="top"></a><h1>Eng reading</h1><p>Last updated 12 Oct 2026, 05:04 PM IST</p><p><a href="archive.html">Older drops (archive)</a></p><ul><li><a href="#d2026-10-12-1642">2026-10-12 16:42 IST</a></li><li><a href="#d2026-10-12-1242">2026-10-12 12:42 IST</a></li><li><a href="#d2026-10-12">2026-10-12 08:42 IST</a></li><li><a href="#d2026-10-11-2042">2026-10-11 20:42 IST</a></li><li><a href="#d2026-10-11-1642">2026-10-11 16:42 IST</a></li><li><a href="#d2026-10-11-1242">2026-10-11 12:42 IST</a></li><li><a href="#d2026-10-11">2026-10-11 08:42 IST</a></li><li><a href="#big">Big projects</a></li></ul><h1 id="d2026-10-12-1642">2026-10-12 16:42 IST</h1>
+<h1>Blog drop · Mon 12 Oct 2026, 4:42 PM IST</h1>
+<p>Company feeds were quiet again; three aggregator items fit. Learning units stay put (still unit 6). The company engineering blogs section is back, with one post from each of the 16 tracked blogs. Suggested big project rotates to Fleet.</p>
+<h2>News from the engineering blogs</h2>
+<p>Fresh items since cutoff <code>2026-10-12T12:50:34+05:30</code>:</p>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=50052814">HN, "Zod 4.6.6 compromised by malware?" (34 comments)</a> (12 Oct) — JavaScript: commenters dig into a suspicious commit in the Zod repo that adds an obfuscated loader which looks up its payload address on Ethereum; one notes the version may never have reached npm, so check your lockfile anyway.</li>
+<li><a href="https://royfish.dev/fingerprints-are-the-new-cookies">Lobsters / Roy Fish, "Fingerprints are the new cookies"</a> (12 Oct) — frontend: an interactive page fingerprints your browser with JavaScript and shows the same nickname after you clear cookies or switch VPNs, then explains why that matters.</li>
+<li><a href="https://www.youtube.com/watch?v=vIt9xua9bLc">Lobsters / ShieldBattery, "We Put Fighting Game Netcode in Brood War"</a> (video) — infrastructure/networking: a video about adding fighting-game-style netcode to StarCraft: Brood War.</li>
+</ul>
+<p>Nothing new from Pinterest, Uber, Google Developers, Google Research, Google Cloud, Meta, Netflix, Airbnb, Stripe, Cloudflare, ByteByteGo, Pragmatic Engineer, Discord, Slack, GitHub, Dropbox, Spotify, Databricks, Arpit Bhayani, Julia Evans, Brendan Gregg, Dan Luu, Architecture Notes, All Things Distributed, Wait But Why or Beej. All feeds loaded. (The Google Developers feed has no dates, so <code>news.py</code> always reports it as empty; I checked it by hand.)</p>
+<hr />
+<h2>Company engineering blogs</h2>
+<p>One post from each tracked company blog, tagged with your domain. Older posts are marked with their year.</p>
+<ul>
+<li><a href="https://www.uber.com/us/en/blog/from-chaos-to-control/">Uber, "From Chaos to Control: Addressing Shard Distribution Challenges in M3DB with Subclusters"</a> (1 Sep 2026) — domain: infrastructure — M3DB splits nodes into fixed-size subclusters that each own their own shards, which shrinks failure blast radius, and uses a greedy, skew-aware order for donating shards when the cluster grows.</li>
+<li><a href="https://medium.com/pinterest-engineering/evolving-pinterests-embedding-retrieval-platform-aede4e831e01">Pinterest, "Evolving Pinterest's Embedding Retrieval Platform"</a> (11 Sep 2026) — domain: databases — how Manas handles billions of embeddings across 80+ clusters, starting with quantization because HNSW indexes need the whole index in RAM.</li>
+<li><a href="https://developers.googleblog.com/why-client-sdk-generation-belongs-in-the-open/">Google Developers, "Why client SDK generation belongs in the open"</a> (17 Sep 2026) — domain: compilers — after their SDK generator vendor shut down, Google moved to Speakeasy's now open-source OpenAPI code generator, which compiles API specs into multi-language client libraries.</li>
+<li><a href="https://research.google/blog/optimizing-cloud-economics-with-linear-elastic-caching/">Google Research, "Optimizing cloud economics with linear elastic caching"</a> (25 Jun 2026) — domain: backend — treats each cached page as a ski-rental problem (pay for memory or pay for a miss) and cut Spanner's cache memory by 15.5% for 5.5% more misses.</li>
+<li><a href="https://cloud.google.com/blog/products/storage-data-transfer/enabling-end-to-end-checksums-in-cloud-storage/">Google Cloud, "Enabling Cloud Storage end-to-end checksums for improved data integrity and durability"</a> (1 Oct 2026) — domain: databases — the Cloud Storage SDKs now send a CRC32C on every upload by default, closing the gap where bits could flip in flight before the server computed its checksum.</li>
+<li><a href="https://engineering.fb.com/2026/09/03/core-infra/zgateway-proxy-zippydb-meta/">Meta, "ZGateway: Learnings from Putting a Proxy in Front of ZippyDB"</a> (3 Sep 2026) — domain: infrastructure — a proxy tier replaces a many-to-many mesh of TLS connections from a million client hosts and gives Meta one place for connection pooling, request batching, admission control and load balancing.</li>
+<li><a href="https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be">Netflix, "Leave the Class Path in the Rearview Mirror"</a> (18 Sep 2026) — domain: Java — a preview of <code>ja</code>, a set of composable command-line tools that make the Java module descriptor the full description of a project, dependency versions included.</li>
+<li><a href="https://medium.com/airbnb-engineering/flexible-authentication-reimagining-authentication-for-millions-of-users-at-airbnb-3a8a4c917137">Airbnb, "Flexible Authentication: Reimagining authentication for millions of users at Airbnb"</a> (12 Aug 2026) — domain: backend — how Airbnb rebuilt login and signup around an "identify first, then challenge" flow for users who return months apart.</li>
+<li><a href="https://stripe.com/blog/rate-limiters">Stripe, "Scaling your API with rate limiters"</a> (2017) — domain: napkin math — Stripe's four limiters (request rate, concurrent requests, fleet-usage shedder, worker-utilisation shedder), including keeping 20% of capacity reserved for critical requests.</li>
+<li><a href="https://blog.cloudflare.com/clef-decision-models/">Cloudflare, "Introducing Clef: our open-source decision models, and new RL fine-tuning platform"</a> (1 Oct 2026) — domain: reinforcement learning — open-weight models that return typed decisions with probabilities, plus a product for fine-tuning them with reinforcement learning.</li>
+<li><a href="https://discord.com/blog/why-discord-is-switching-from-go-to-rust">Discord, "Why Discord is switching from Go to Rust"</a> (Feb 2020) — domain: Go — the Read States service had latency spikes every few minutes, which Discord traced to Go's garbage collector, and a Rust rewrite removed them.</li>
+<li><a href="https://slack.engineering/shipyard-how-we-built-slacks-next-generation-ec2-platform/">Slack, "Shipyard: How We Built Slack's Next-Generation EC2 Platform"</a> (14 Jul 2026) — domain: infrastructure — immutable, layered machine images with bake/provision phases, metric-gated rollouts and a "Reaper" that replaces instances once they pass a maximum age.</li>
+<li><a href="https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/">GitHub, "Improving site performance by shipping more CSS"</a> (25 Sep 2026) — domain: frontend design &amp; performance — moving Primer from runtime CSS-in-JS to static CSS Modules cut server-side render time by 55%, and all of github.com finished the move by June 2026.</li>
+<li><a href="https://dropbox.tech/application/our-journey-to-type-checking-4-million-lines-of-python">Dropbox, "Our journey to type checking 4 million lines of Python"</a> (2019) — domain: compilers — the story of mypy at Dropbox, from a research project to gradual static typing of the company's main language.</li>
+<li><a href="https://engineering.atspotify.com/2026/9/why-spotify-is-not-using-bayesian-a-b-testing/">Spotify, "Why Spotify Is Not Using Bayesian A/B Testing"</a> (8 Sep 2026) — domain: napkin math — argues that a Bayesian mode often hides the same mistakes as peeking in frequentist tests, and that the two frameworks are closer than the debate suggests.</li>
+<li><a href="https://www.databricks.com/blog/load-terabytes-data-minutes-lakebase-postgres">Databricks, "Load terabytes of data in minutes into Lakebase Postgres"</a> (8 Oct 2026) — domain: databases — Spark builds valid Postgres pages and indexes in parallel and writes them straight to storage, and the primary attaches them with one small WAL record (up to 147× faster loads).</li>
+</ul>
+<hr />
+<h2>Compilers — unit 6: tree-walking evaluation</h2>
+<p><strong>From the archives:</strong> <a href="https://news.ycombinator.com/item?id=21092698">HN, "Crafting Interpreters: Closures" (60 comments, 2019)</a>, where the author answers questions and commenters point out that the Lua-inspired design keeps captured variables on the stack until they need to move to the heap.</p>
+<p><strong>Project idea: LoxCall</strong> — implements function declarations, calls, <code>return</code> and a native <code>clock()</code> from <a href="https://craftinginterpreters.com/functions.html">Crafting Interpreters, ch. 10 "Functions"</a>.
+- <strong>Explanation:</strong> A function call in a tree-walker evaluates the callee and the arguments, checks the arity, makes a fresh environment whose parent is the environment where the function was <em>declared</em>, binds the parameters, and walks the body. <code>return</code> has to unwind through any number of nested statements, so the book throws a special exception that the call site catches. Because the new environment hangs off the declaring environment, closures come almost for free. Native functions like <code>clock()</code> are just Go values that implement the same <code>Callable</code> interface, which is how every interpreter exposes its runtime.
+- <strong>Build steps:</strong>
+  - Add <code>Call</code>, <code>Function</code> and <code>Return</code> nodes, plus a <code>Callable</code> interface (<code>Arity()</code>, <code>Call()</code>), to your Go Lox (on top of LoxBranch/EnvChain).
+  - Unwind <code>return</code> with panic/recover or a sentinel result; pick one and write down why.
+  - Add native <code>clock()</code>; test closures with a counter-maker function.
+  - Benchmark recursive <code>fib(25)</code>.
+- <strong>Measure:</strong> ns per call in <code>fib(25)</code> (242,785 calls). Napkin first: at about 1 µs per call with map-based environments that's about 0.25 s; write your guess.
+- <em>Size: 1–2 weeks.</em> Extends LoxBranch; Glint Phase 1.</p>
+<p><strong>Paper:</strong> <a href="https://raw.githubusercontent.com/papers-we-love/papers-we-love/main/languages/haskell/making-a-fast-curry-push-enter-versus-eval-apply-for-higher-order-languages.pdf">Marlow &amp; Peyton Jones, "Making a Fast Curry: Push/Enter vs. Eval/Apply for Higher-order Languages"</a> [PWL]. How a compiler implements a call when it doesn't know the callee's arity. Your LoxCall arity check is the simplest version of eval/apply.</p>
+<p><strong>Book chapter:</strong> Read: Crafting Interpreters, ch. 10 "Functions" (link above).</p>
+<hr />
+<h2>Infrastructure — unit 6: load balancing</h2>
+<p><strong>From the archives:</strong> <a href="https://architecturenotes.co/p/load-balancers">Architecture Notes, "Load Balancers"</a> (Nov 2022), a short overview of where load balancers sit, the common algorithms, and what changes once you go past one server.</p>
+<p><strong>Project idea: SubPlace</strong> — implements Uber's subclustered shard placement and greedy skew-aware donation from the <a href="https://www.uber.com/us/en/blog/from-chaos-to-control/">Uber M3DB article</a>.
+- <strong>Explanation:</strong> In plain sharded placement, any node can hold any shard as long as replicas land in different isolation groups (zones). So when a node fails or bootstraps, it streams from peers spread across most of the cluster: up to two-thirds of it for RF=3, according to Uber. Subclusters split nodes into fixed groups (a multiple of RF) that each own a disjoint slice of shards, which caps a node's peers at its subcluster size. When a new subcluster joins, Uber picks which shards to donate by simulating each removal and choosing the one that leaves the donor subcluster least skewed, so no shard has to move twice. You learn that placement is load balancing for state, where the cost is bytes copied, not requests.
+- <strong>Build steps:</strong>
+  - Go simulator: N nodes, 3 zones, RF=3, S shards; implement free sharded placement first.
+  - Add subclusters of size k (a multiple of 3) that own disjoint shard ranges.
+  - Grow the cluster by one subcluster with random donation vs Uber's greedy min-skew donation.
+  - Report peers per node, skew (max − min shards per node) and shards moved.
+- <strong>Measure:</strong> peers per node (blast radius) for 60 nodes. Napkin first: zone-restricted sharded placement shares with about 40 nodes (2/3); subclusters of 6 cap it at 5. Write the skew you expect from random donation.
+- <em>Size: 2 weeks.</em> Fleet Phase 2 (scheduler) and Wal-Kv partitions (IdxShard).</p>
+<p><strong>Paper:</strong> <a href="https://raw.githubusercontent.com/papers-we-love/papers-we-love/main/distributed_systems/copysets-reducing-the-frequency-of-data-loss-in-cloud-storage.pdf">Cidon et al., "Copysets: Reducing the Frequency of Data Loss in Cloud Storage"</a> (USENIX ATC 2013) [PWL]. It shows why random replica placement almost always loses data when 1% of nodes fail together, and how limiting which nodes share replicas helps. Subclusters are the same idea.</p>
+<p><strong>Book chapter:</strong> Read: DDIA, ch. 6 "Partitioning" (1st ed.; ch. 7 "Sharding" in the 2nd), the rebalancing section (book; no free chapter page).</p>
+<hr />
+<h2>Backend — unit 6: caching</h2>
+<p><strong>From the archives:</strong> <a href="https://arpitbhayani.me/blogs/midpoint-insertion-caching-strategy">Arpit Bhayani, "How MySQL Avoids Performance Hits from Table Scans"</a>, on InnoDB's midpoint-insertion LRU, which keeps one big scan from flushing the hot pages out of the buffer pool.</p>
+<p><strong>Project idea: SkiCache</strong> — implements linear elastic caching (ski-rental TTLs, with LRU only when the cache is full) from the <a href="https://research.google/blog/optimizing-cloud-economics-with-linear-elastic-caching/">Google Research post</a>.
+- <strong>Explanation:</strong> A fixed-size cache makes you guess one size for peak load, so you pay for idle memory most of the day. Linear elastic caching charges every entry for its bytes × seconds in memory, and on each access gives it a TTL. The break-even ski-rental rule keeps an entry until its rent would equal the cost of one miss, then lets it go. LRU only steps in when the cache is physically full. Google's version predicts TTLs with a tiny decision tree inside Spanner and got 15.5% less memory for 5.5% more misses. You learn to price memory and misses in the same unit and to optimise the total.
+- <strong>Build steps:</strong>
+  - Go cache with a per-entry TTL = miss cost ÷ (rent per byte-second × size), plus an LRU cap.
+  - Cost model: memory $/GiB-day and a per-key miss cost (cheap vs expensive backend reads).
+  - Replay a Zipf trace with daily load swings (or a public cache trace).
+  - Compare fixed LRU sized for peak vs SkiCache on total cost = memory·time + misses·cost.
+- <strong>Measure:</strong> total cost and average memory footprint vs fixed LRU. Napkin first: at $3/GiB-day, a 4 KB page rents for about 1.3e-10 $/s, so a $1e-7 miss gives a TTL of about 760 s. The break-even rule is never worse than 2× optimal; write your saving.
+- <em>Size: 1–2 weeks.</em> Extends AsideCache / CacheFrontMini; Edgelet Phase 2.</p>
+<p><strong>Paper:</strong> <a href="https://www.vldb.org/cidrdb/papers/2025/p22-kumar.pdf">Kumar, Lipcon, Purohit &amp; Sarlos, "Linear Elastic Caching via Ski Rental"</a> (CIDR 2025). Not in PWL or DDIA2 refs; it's the paper behind the post, with the proof that eviction policy and rental time can be optimised separately.</p>
+<p><strong>Book chapter:</strong> Read: OSTEP, ch. 23 "Complete Virtual Memory Systems" (<a href="https://pages.cs.wisc.edu/~remzi/OSTEP/vm-complete.pdf">PDF</a>; the Linux page cache and its modified 2Q replacement).</p>
+<hr />
+<h2>Databases — unit 6: B+trees and indexes</h2>
+<p><strong>From the archives:</strong> <a href="https://arpitbhayani.me/blogs/mongodb-cursor-skip-is-slow">Arpit Bhayani, "MongoDB Pagination - Skip is Slow"</a>, why <code>skip(n)</code> has to walk n entries of the index and how seeking by key fixes it.</p>
+<p><strong>Project idea: BulkLeaf</strong> — implements bottom-up B+tree bulk loading into slotted pages, the technique behind the <a href="https://www.databricks.com/blog/load-terabytes-data-minutes-lakebase-postgres">Databricks Lakebase load article</a>.
+- <strong>Explanation:</strong> Inserting keys one at a time rewrites pages over and over, and 50/50 splits on sorted input leave leaves about half full. Bulk loading sorts first, packs leaves left to right to a fill factor, then builds each internal level from the first key of every page below, so each page is written once. Lakebase goes further: Spark builds valid Postgres pages and indexes outside the primary, and the primary attaches them atomically with one compact WAL record, so live queries are never touched. You learn why index builds and restores use this path, and how a single log record can publish a whole new file set.
+- <strong>Build steps:</strong>
+  - Sort 1M (key, 100-byte value) records; pack SlotPage leaves at 90% fill.
+  - Build internal levels bottom-up until one root remains; write everything to new files.
+  - Publish with one manifest record in Wal-Kv's WAL; crash before and after it and check recovery.
+  - Compare with 1M single inserts into BPlusLeaf.
+- <strong>Measure:</strong> build time and leaf count, bulk vs inserts. Napkin first: about 34 records per 4 KB leaf at 90% gives about 29k leaves, vs about 53k at half-full; write your speed-up.
+- <em>Size: 1–2 weeks.</em> Wal-Kv storage; WalSQL Phase 1.</p>
+<p><strong>Paper:</strong> <a href="https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf">Bayer &amp; McCreight, "Organization and Maintenance of Large Ordered Indices"</a> (Boeing Scientific Research Laboratories report, 1970) [DDIA2 ch. 4 refs]. The original B-tree paper: page splits, the cost analysis, and why the tree stays balanced.</p>
+<p><strong>Book chapter:</strong> Read: Database Internals, ch. 5 "Transaction Processing and Recovery" (book; buffer management, WAL and checkpoints, which BulkLeaf's manifest record relies on).</p>
+<hr />
+<h2>Terminals — unit 6: build a shell</h2>
+<p><strong>From the archives:</strong> <a href="https://jvns.ca/blog/2024/10/31/ascii-control-characters/">Julia Evans, "ASCII control characters in my terminal"</a> (Oct 2024), her table of all 33 control codes and which ones the kernel's terminal driver handles vs which go to the program.</p>
+<p><strong>Project idea: CtrlKeys</strong> — implements raw-mode line editing with the control codes from <a href="https://jvns.ca/blog/2024/10/31/ascii-control-characters/">Julia Evans's post</a> inside your shell.
+- <strong>Explanation:</strong> In canonical ("cooked") mode, the kernel's tty driver buffers the line and handles backspace and Ctrl-U itself, so your shell only ever sees whole lines. Readline-style editing turns off <code>ICANON</code> and <code>ECHO</code> and interprets codes like Ctrl-A (1), Ctrl-E (5), Ctrl-W (23) and Ctrl-D (4) itself, while leaving <code>ISIG</code> on so the driver still turns Ctrl-C into SIGINT and Ctrl-Z into SIGTSTP. Every interactive shell does this, and you have to restore the terminal on exit, on Ctrl-Z, and on <code>fg</code>. You learn which layer owns each key.
+- <strong>Build steps:</strong>
+  - In MiniSh, switch to raw-ish mode with termios (<code>golang.org/x/term</code> or syscalls), keeping <code>ISIG</code>.
+  - Read the key loop byte by byte, handle about 10 control codes, and redraw the line with ANSI escapes.
+  - Restore termios on exit, on SIGTSTP and on SIGCONT (re-enter raw mode after <code>fg</code>); check with <code>stty -a</code>.
+  - Test against bash with a 10-key checklist.
+- <strong>Measure:</strong> keys out of 10 that behave like bash, and broken-terminal exits in 20 runs that end in Ctrl-C, Ctrl-Z or a panic (target 0). Napkin first: write how many breakages you expect before you add the restore paths.
+- <em>Size: 1 week.</em> Burrow Phase 1; extends MiniSh / JobCtl.</p>
+<p><strong>Paper:</strong> <a href="https://www.nokia.com/bell-labs/about/dennis-m-ritchie/st.pdf">Ritchie, "A Stream Input-Output System"</a> (AT&amp;T Bell Labs Technical Journal, 1984). Not in PWL; it describes the terminal line discipline as a module in a stream between program and device, the layer that handles Ctrl-C before your shell sees it.</p>
+<p><strong>Book chapter:</strong> Read: Beej's Guide to Interprocess Communication, ch. 3 "Signals" (<a href="https://beej.us/guide/bgipc/html/split/signals.html">link</a>; handlers, <code>sigaction</code>, and the reentrancy rules your SIGTSTP handler must follow).</p>
+<hr />
+<h2>Frontend design &amp; performance — unit 6: images</h2>
+<p><strong>From the archives:</strong> <a href="https://danluu.com/web-bloat/">Dan Luu, "How web bloat impacts users with slow connections"</a>, his measurements of how most commercial sites fail on a dial-up-like link with 500–1000 ms latency and packet loss.</p>
+<p><strong>Project idea: StyleCost</strong> — implements GitHub's CSS-in-JS vs CSS Modules comparison from the <a href="https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/">GitHub post</a>, and measures what it does to your hero image's LCP.
+- <strong>Explanation:</strong> Runtime CSS-in-JS builds styles during render on the server and again on the client, so cost grows with the number of components on the page. CSS Modules compile to static stylesheets that ship in the HTML, so there is no runtime work at all. GitHub migrated each component behind a feature flag, compared visual-regression snapshots, and got 55% faster server rendering. The image angle: the browser can't paint your LCP image until render-blocking CSS has arrived, so where your styles come from changes when the hero image shows up.
+- <strong>Build steps:</strong>
+  - Build a page of 500 styled components in two versions: runtime CSS-in-JS and CSS Modules, switched by a flag.
+  - Time server render (<code>renderToString</code>) and client hydration for each version.
+  - Add a hero image and record LCP on Slow 4G for both versions.
+  - Screenshot-diff both versions to show they look identical.
+- <strong>Measure:</strong> server render ms for 500 components, CSS-in-JS vs Modules. Napkin first: GitHub saw 55% less; write your number before you run it.
+- <em>Size: 1 week.</em> Capstone dashboard; next to AvifCurve / LazyWebP; Fleet Phase 5.</p>
+<p><strong>Paper:</strong> <a href="https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final177.pdf">Wang, Balasubramanian, Krishnamurthy &amp; Wetherall, "Demystifying Page Load Performance with WProf"</a> (NSDI 2013). Not in PWL or DDIA2 refs; it maps the dependency graph of a page load and shows how CSS and JS evaluation sit on the critical path.</p>
+<p><strong>Book chapter:</strong> Read: Eloquent JavaScript, ch. 19 "Project: A Pixel Art Editor" (<a href="https://eloquentjavascript.net/19_paint.html">link</a>; canvas pixels, flood fill, and saving an image as a data URL).</p>
+<hr />
+<h2>Reinforcement learning — unit 6: Q-learning and SARSA</h2>
+<p><strong>From the archives:</strong> <a href="https://news.ycombinator.com/item?id=25549937">HN, "Introduction to Reinforcement Learning (2015)" (44 comments)</a>, on David Silver's lecture course, which commenters call the best intro to RL. Its model-free control lecture covers Sarsa and Q-learning.</p>
+<p><strong>Project idea: ExpSarsa</strong> — implements Expected Sarsa from Sutton &amp; Barto (2nd ed.), §6.6, and compares it with Sarsa and Q-learning across step sizes on cliff walking.
+- <strong>Explanation:</strong> Sarsa's target uses the one next action it happened to sample, so it's noisy. Expected Sarsa replaces that with the average of Q(s′, a′) over all next actions, weighted by the current ε-greedy policy. That removes the sampling noise, so it tolerates much larger step sizes; in a deterministic world even α = 1 works. With a greedy target policy it becomes Q-learning, so one function covers all three methods. For your autoscaler, lower-variance targets mean fewer bad scaling decisions from noisy rewards.
+- <strong>Build steps:</strong>
+  - Reuse CliffWalk; add the expected target under the ε-greedy policy.
+  - Sweep α from 0.1 to 1.0 for Sarsa, Q-learning and Expected Sarsa.
+  - Plot the mean return over the first 100 episodes and after 10,000 episodes.
+  - Add random "wind" to make the environment stochastic and re-run.
+- <strong>Measure:</strong> mean return over episodes 1–100 at α = 0.9 for each method. Napkin first: write which method you expect to fall apart at high α, then compare with the book's α-sweep figure in §6.6.
+- <em>Size: 1 week.</em> Fleet Phase 4 (lower-variance targets for the scaler).</p>
+<p><strong>Paper:</strong> <a href="https://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/vanseijenadprl09.pdf">van Seijen, van Hasselt, Whiteson &amp; Wiering, "A Theoretical and Empirical Analysis of Expected Sarsa"</a> (IEEE ADPRL 2009). Not in PWL or DDIA2 refs; it proves that Expected Sarsa converges and predicts when it beats Sarsa and Q-learning.</p>
+<p><strong>Book chapter:</strong> Read: Sutton &amp; Barto, <em>Reinforcement Learning: An Introduction</em> (2nd ed.), §6.6 "Expected Sarsa" (the full 2nd-edition PDF you already have).</p>
+<hr />
+<h2>Napkin math — unit 6: utilisation and queueing delay</h2>
+<p><strong>From the archives:</strong> <a href="https://news.ycombinator.com/item?id=13997029">HN, "Scaling your API with rate limiters" (82 comments, 2017)</a>, where the Stripe author shares example code and readers compare token-bucket libraries.</p>
+<p><strong>Project idea: ShedGate</strong> — implements Stripe's request-rate limiter, concurrent-requests limiter and fleet-usage load shedder from the <a href="https://stripe.com/blog/rate-limiters">Stripe post</a>.
+- <strong>Explanation:</strong> A rate limiter caps each user's requests per second with a token bucket. A concurrency limiter caps requests <em>in flight</em>, which protects expensive endpoints. A load shedder looks at the whole system instead of one user: Stripe always reserves a share of capacity (their example is 20%) for critical requests, so non-critical traffic gets 503s first. Queueing theory says why this matters: past ρ = 1 the queue grows without limit, so dropping low-priority work is the only way to keep critical latency bounded.
+- <strong>Build steps:</strong>
+  - Go middleware for paymentbooking: per-user token bucket (Redis or in-process) and an in-flight semaphore.
+  - Tag requests as critical or non-critical; reserve 20% of workers for critical requests.
+  - Drive it with OpenClosed's open-loop generator at 150% of capacity.
+  - Record critical p99 and success rate with and without the shedder.
+- <strong>Measure:</strong> critical p99 at 150% offered load. Napkin first: 8 workers × 5 ms = 1,600 rps capacity; at 2,400 rps the queue grows by 800 requests a second (about 5 s of wait after 10 s) without shedding. Write your number with shedding on.
+- <em>Size: 1–2 weeks.</em> Extends RetryBudget / IdemPay; Fleet Phase 4 (overload safety).</p>
+<p><strong>Paper:</strong> <a href="https://www.usenix.org/system/files/osdi20-cho.pdf">Cho et al., "Overload Control for µs-scale RPCs with Breakwater"</a> (OSDI 2020). Not in PWL; DDIA2 only cites the AWS load-shedding article. It's a credit-based overload controller whose design starts from queueing delay as the signal.</p>
+<p><strong>Book chapter:</strong> Read: Kurose &amp; Ross, <em>Computer Networking</em>, §1.4 "Delay, Loss, and Throughput in Packet-Switched Networks" (book; traffic intensity La/R and why queueing delay explodes as it nears 1).</p>
+<hr />
+<h2>JavaScript — unit 6: promises and async/await</h2>
+<p><strong>From the archives:</strong> <a href="https://news.ycombinator.com/item?id=8984648">HN, "What Color Is Your Function?" (146 comments)</a>, the classic debate on how async functions spread through a codebase; commenters compare threads, continuations and effect types.</p>
+<p><strong>Project idea: CallStream</strong> — implements Liskov &amp; Shrira's promises and call-streams, including two-stream composition, from the paper below.
+- <strong>Explanation:</strong> The 1988 paper that named promises paired them with call-streams. A caller sends a sequence of remote calls without waiting, and each call returns a promise that is claimed later, with results and exceptions delivered in order. Its section on stream composition chains streams into a pipeline (its grades example sends database results on to a printer stream) and points out the termination problem: when one stage fails, the whole group has to stop. That's <code>AbortController</code> today. You learn why batching calls beats awaiting each one, and why cancellation belongs to a group, not to one promise.
+- <strong>Build steps:</strong>
+  - JS <code>CallStream</code> class over a fake network with 50 ms RTT: <code>call()</code> returns a promise, and calls are batched per tick.
+  - Keep results in order and deliver exceptions through <code>claim()</code> / <code>await</code>.
+  - Compose two streams (lookup → print) with an <code>AbortController</code> that cancels both when one fails.
+  - Compare with a plain <code>for … await</code> loop and with <code>Promise.all</code>.
+- <strong>Measure:</strong> total time for 100 calls. Napkin first: awaiting each call costs 100 × 50 ms ≈ 5 s; a stream should be close to one RTT plus send time. Write your number for the two-stream pipeline.
+- <em>Size: 1 week.</em> Extends LoopSim / AwaitAll / ChainThen.</p>
+<p><strong>Paper:</strong> <a href="https://heather.miller.am/teaching/cs7680/pdfs/liskov1988.pdf">Liskov &amp; Shrira, "Promises: Linguistic Support for Efficient Asynchronous Procedure Calls in Distributed Systems"</a> (PLDI 1988). Not in PWL or DDIA2 refs; it's where the word "promise" comes from.</p>
+<p><strong>Book chapter:</strong> Read: You Don't Know JS (1st ed.), Async &amp; Performance, ch. 5 "Program Performance" (<a href="https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/async%20%26%20performance/ch5.md">link</a>; Web Workers and real parallelism, beyond the event loop).</p>
+<hr />
+<h2>Go — unit 6: pipelines, cancellation and context</h2>
+<p><strong>From the archives:</strong> <a href="https://news.ycombinator.com/item?id=42777625">HN, "Context should go away for Go 2 (2017)" (169 comments)</a>, arguing over whether passing <code>ctx</code> everywhere is good explicitness or noise that goroutine-local storage would remove.</p>
+<p><strong>Project idea: SemPipe</strong> — implements the counting semaphore from <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf">OSTEP, ch. 31 "Semaphores"</a> in Go, then a context-aware weighted version that bounds a pipeline stage.
+- <strong>Explanation:</strong> A semaphore is an integer with two operations: wait (decrement, and block if the result is negative) and post (increment, and wake a waiter). OSTEP builds one from a lock and a condition variable, then uses two semaphores plus a mutex for the bounded buffer, and shows the deadlock you get if the lock is taken in the wrong order. In Go, a buffered channel is a semaphore, but a weighted one that also respects <code>ctx.Done()</code> is what you need to cap concurrency in a cancellable pipeline. Building both shows what <code>x/sync/semaphore</code> and <code>errgroup.SetLimit</code> do for you.
+- <strong>Build steps:</strong>
+  - A semaphore from <code>sync.Mutex</code> + <code>sync.Cond</code>, following OSTEP's version.
+  - A bounded buffer with empty/full semaphores; reproduce the lock-ordering deadlock, then fix it.
+  - A weighted <code>Acquire(ctx, n)</code> that gives up on cancel, used to cap a FanPipe stage at k jobs.
+  - Compare with a buffered-channel semaphore and count goroutines after cancelling.
+- <strong>Measure:</strong> jobs/s at k = 8 with 20 ms jobs, and goroutines left after cancelling (target 0). Napkin first: 8 / 0.02 s = 400 jobs/s.
+- <em>Size: 1 week.</em> Extends FanPipe / CtxPipe / TimeoutBox.</p>
+<p><strong>Paper:</strong> <a href="https://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD123.html">Dijkstra, "Cooperating Sequential Processes" (EWD 123)</a> (1965). Not in PWL's folders (you've already read his mutual-exclusion paper); this is where P and V semaphores were introduced.</p>
+<p><strong>Book chapter:</strong> Read: OSTEP, ch. 31 "Semaphores" (link above).</p>
+<hr />
+<h2>Java — unit 6: the Collections Framework</h2>
+<p><strong>From the archives:</strong> <a href="https://news.ycombinator.com/item?id=48692090">HN, "A C++ implementation of a fast hash map and hash set using hopscotch hashing" (25 comments)</a>; commenters compare it with robin hood hashing and Boost's <code>unordered_flat_map</code>, and argue about benchmarks.</p>
+<p><strong>Project idea: HopMap</strong> — implements hopscotch hashing from Herlihy, Shavit &amp; Tzafrir (paper below) as a Java map, benchmarked against <code>HashMap</code>.
+- <strong>Explanation:</strong> Hopscotch hashing is open addressing where every key lives within H slots (say 32) of its home bucket, and each bucket keeps a bitmap of which nearby slots hold its keys. On insert, if the nearest free slot is too far away, entries are moved backwards ("hopped") until the free slot is in range; if that's impossible, the table resizes. Lookups touch one or two cache lines. <code>java.util.HashMap</code>, by contrast, chains a <code>Node</code> object per entry and turns long bins into trees. You learn how memory layout, not big-O, decides hash map speed.
+- <strong>Build steps:</strong>
+  - Java <code>HopMap&lt;K,V&gt;</code> with parallel key/value arrays, an <code>int[]</code> of hop bitmaps, H = 32.
+  - <code>put</code> with displacement, <code>get</code>, <code>remove</code>, and resize when displacement fails.
+  - Extend <code>AbstractMap</code> so <code>entrySet()</code> and iteration work; JMH <code>get</code>/<code>put</code> at load factors 0.5, 0.75 and 0.9 vs <code>HashMap</code>.
+  - Measure bytes per entry with JOL or a heap histogram.
+- <strong>Measure:</strong> bytes per entry, and ns per <code>get</code> at load 0.9. Napkin first: a <code>HashMap</code> node is about 32 B plus a table slot (≈37 B at load 0.75, compressed oops); HopMap is about (4 + 4 + 4) / 0.9 ≈ 13 B. Write your ns guess.
+- <em>Size: 1–2 weeks.</em> Follows HashBench / MSQueue; Fleet Phase 3 (JVM control plane).</p>
+<p><strong>Paper:</strong> <a href="https://people.csail.mit.edu/shanir/publications/disc2008_submission_98.pdf">Herlihy, Shavit &amp; Tzafrir, "Hopscotch Hashing"</a> (DISC 2008) [PWL; PWL's own link is dead, so this is the authors' copy].</p>
+<p><strong>Book chapter:</strong> Read: Oracle Java Tutorials, Collections, "Custom Collection Implementations" (<a href="https://docs.oracle.com/javase/tutorial/collections/custom-implementations/index.html">link</a>; build HopMap on <code>AbstractMap</code> so it works with the rest of the framework).</p>
+<hr />
+<h2>Big projects I'd suggest</h2>
+<ul>
+<li><strong>WalSQL</strong> (~22 weeks) — databases, compilers, Go, backend, terminals, napkin, Java — distributed SQL grown from Wal-Kv (LSM → MVCC → SQL → Postgres wire → Raft).</li>
+<li><strong>Fleet</strong> (~18 weeks) — infrastructure, RL, napkin, Go, backend, frontend, JavaScript, Java — mini orchestrator with an RL autoscaler on top of the capstone.</li>
+<li><strong>Glint</strong> (~17 weeks) — compilers, Go, terminals, Java, JavaScript, frontend, napkin — language with tree-walker, bytecode VM, JIT-lite and JVM backend.</li>
+<li><strong>Edgelet</strong> (~17 weeks) — infrastructure, backend, frontend, napkin, terminals, Go, RL stretch — Cloudflare-style edge cache/proxy with eBPF observability.</li>
+<li><strong>CoEdit</strong> (~14 weeks) — frontend, JavaScript, backend, databases, napkin, Go — local-first collaborative editor on a CRDT sync service.</li>
+<li><strong>Burrow</strong> (~13 weeks) — terminals, compilers, infrastructure, networking, napkin, Go, frontend — terminal multiplexer, VT emulator and mosh-style remote shell.</li>
+</ul>
+<p><strong>Suggested now: Fleet.</strong> Several of this drop's projects are Fleet pieces. SubPlace (placement and blast radius) is the Phase 2 scheduler problem. ShedGate (capacity reserved for critical traffic) and ExpSarsa (lower-variance TD targets) are Phase 4's safety fallback and agent. HopMap/SemPipe feed the Phase 3 JVM and Go control plane. Burrow was the pick at 12:42, Glint this morning and Edgelet last night. Fleet was last suggested on 11 Oct at 4:42 PM with its Phase 1 reading, so this picks up at Phase 2. <strong>Next-phase reading (Phase 2 — control plane and scheduler):</strong> van Steen ch. 8 "Fault Tolerance" (book); Skiena ch. 12 "Dealing with Hard Problems" (bin-packing heuristics; book); DDIA ch. 8 (already read); papers <a href="https://research.google/pubs/omega-flexible-scalable-schedulers-for-large-compute-clusters/">Schwarzkopf et al., "Omega"</a> [PWL] and Mesos (already read); articles <a href="https://engineering.fb.com/2019/06/06/data-center-engineering/twine/">Meta, "Twine"</a> and <a href="https://arpitbhayani.me/blogs/phi-accrual/">Arpit Bhayani, "Phi Accrual Failure Detection Algorithm"</a>, plus Uber's Peloton (already read).</p>
+<pre><code class="language-bash"># key commands
+python3 tools/news.py &quot;2026-10-12T12:50:34+05:30&quot; &gt; /tmp/news-1642.json   # ran 2026-10-12T16:49:15+05:30
+bash tools/title.sh /tmp/urls.txt        # HTTP 200 + title for every link; PDFs checked with pdftotext
+bash tools/yt.sh /tmp/yt.txt             # YouTube oEmbed title check
+python3 tools/progress.py check issues/2026-10-12-1642.md   # must print &quot;no repeats&quot;
+# progress.json updated by hand for this blog drop (learning units NOT advanced)
+bash tools/publish_kindle.sh             # rebuild + push https://samarthsrao.github.io/eng-reading/
+</code></pre>
+<p><a href="#top">Top</a></p><h1 id="d2026-10-12-1242">2026-10-12 12:42 IST</h1>
 <h1>Blog drop · Mon 12 Oct 2026, 12:42 PM IST</h1>
 <p>Company feeds were quiet since this morning; two aggregator items fit. Learning units stay put (still unit 6). Archive picks and build-from-article/chapter projects below. Suggested big project rotates to Burrow.</p>
 <h2>News from the engineering blogs</h2>
@@ -960,453 +1165,6 @@ python3 tools/news.py &quot;2026-10-11T02:29:27+05:30&quot; &gt; /tmp/news.json 
 python3 tools/progress.py check issues/2026-10-11.md
 python3 tools/progress.py record issues/2026-10-11.md 2026-10-11 2026-10-11T08:43:24+05:30
 </code></pre>
-<p><a href="#top">Top</a></p><h1 id="d2026-10-11-0230">2026-10-11 02:30 IST</h1>
-<h1>Blog drop · Sun 11 Oct 2026, 2:30 AM IST (on demand)</h1>
-<p>Six new posts since Fri 9 Oct, 8:45 AM IST. Learning units don't move in blog drops.</p>
-<h2>News from the engineering blogs</h2>
-<p><strong>Cloudflare</strong>
-- <a href="https://blog.cloudflare.com/workers-on-demand-profiling/">Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects</a>, you can now take a CPU or memory profile of a running Worker from the dashboard or CLI, view it as a flamegraph and download the pprof file.
-- <a href="https://blog.cloudflare.com/deno-joins-cloudflare/">Deno is joining Cloudflare</a>, Ryan Dahl and Kenton Varda explain why the Deno team is merging into the Workers runtime to make self-hosting Workers and Durable Objects simpler.
-- <a href="https://blog.cloudflare.com/clef-faster-cheaper-multimodal/">Introducing Clef-omni with full multimodality, plus a faster Clef and a cheaper Clef-flash</a>, Cloudflare's open-weight "decision" models now accept audio and video input, and the small model got cheaper.</p>
-<p><strong>Google Cloud</strong>
-- <a href="https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/">What's new with Google Data Cloud</a>, a running list of data launches, including Spanner Omni (Spanner you can run anywhere) and native BM25 hybrid search in AlloyDB.
-- <a href="https://cloud.google.com/blog/products/data-analytics/modernize-unstructured-data-workloads-with-alteryx-and-bigquery/">Modernizing Unstructured Data Workflows: Alteryx Live Query meets Google Cloud BigQuery</a>, a partner post on running document-extraction pipelines inside BigQuery instead of moving the data out.</p>
-<p><strong>Pinterest</strong>
-- <a href="https://medium.com/pinterest-engineering/from-activity-to-intent-generating-user-journeys-with-llms-9652b9417626">From Activity to Intent: Generating User Journeys with LLMs</a>, Pinterest fine-tuned a 4B-parameter model, trained to copy a larger model's output, that reads a user's activity log and names their goals ("journeys"), and serves it at notification scale.</p>
-<p>Nothing new from Uber, Google Developers, Google Research, Meta, Netflix, Airbnb, Stripe, ByteByteGo, Pragmatic Engineer, Discord, Slack or GitHub. All 15 feeds loaded.</p>
-<h2>Project ideas, one per domain</h2>
-<ul>
-<li><strong>Compilers: FilterQL.</strong> Build a small Pratt-parsed filter language (<code>price &gt; 100 and city == "BLR"</code>) that runs as a scan predicate over Wal-Kv. Based on unit 5 (Pratt parsing). <em>2–3 weeks.</em> First step: a tokenizer plus a binding-power table for 6 operators. Measure: expressions parsed per second on a 10k-expression corpus, compared with a hand-written recursive-descent version.</li>
-<li><strong>Infrastructure: minibox.</strong> Build a Go container runtime using Linux namespaces and cgroups v2 that runs your capstone service with a CPU and memory limit. Based on unit 5 (containers). <em>3–4 weeks.</em> First step: <code>minibox run /bin/sh</code> in new UTS, PID and mount namespaces. Measure: cold-start time in ms, compared with <code>docker run</code> for the same binary.</li>
-<li><strong>Backend: IdemPay.</strong> Add Stripe-style idempotency-key middleware to paymentbooking that stores the request fingerprint and response, replays exact retries and returns 409 on mismatched ones. Based on unit 5 (idempotency). <em>2–3 weeks.</em> First step: an <code>idempotency_keys</code> table and a test that sends the same POST twice. Measure: duplicate bookings after 10k requests with injected timeouts and client retries (target 0).</li>
-<li><strong>Databases: SearchSink.</strong> Keep a BM25 full-text index in Go up to date from cdc change events, so new rows become searchable without a batch rebuild. Based on "What's new with Google Data Cloud" (AlloyDB's native BM25 hybrid search). <em>4–5 weeks.</em> First step: an in-memory inverted index with BM25 scoring over 100k static docs. Measure: freshness lag, the ms from DB commit until the row is searchable.</li>
-<li><strong>Terminals: supervise.</strong> Build a small process supervisor in Go that starts your capstone's services, passes Ctrl-C/SIGTERM on to them, restarts any that crash and prefixes each one's logs. Based on unit 5 (job control and signals). <em>2 weeks.</em> First step: start 3 children in their own process group and forward SIGINT. Measure: time from SIGTERM until every child has exited, compared with your drain timeout.</li>
-<li><strong>Frontend: BundleDiet.</strong> Build a small dashboard for the capstone autoscaler, then cut its startup JavaScript with route-level code splitting and lazy-loaded charts. Based on unit 5 (JS cost and code splitting). <em>2 weeks.</em> First step: build it unsplit and record a baseline under Slow 4G with 4x CPU throttling. Measure: KB of JS on first load, plus Total Blocking Time.</li>
-<li><strong>Reinforcement learning: TD-Scaler.</strong> Train a tabular TD/Q-learning agent in Python that picks replica counts against a replayed traffic trace, and compare it with your capstone's threshold rule. Based on unit 5 (MC and TD learning). <em>3–4 weeks.</em> First step: a simulator where state = (load bucket, replicas) and reward = −(SLO misses + pod cost). Measure: SLO-violation minutes per simulated day, agent vs. the threshold rule.</li>
-<li><strong>Napkin math: LittleScaler.</strong> Use L = λW (in-flight requests = arrival rate × latency) to predict the replica count and DB pool size your capstone needs, then check the prediction with a load test. Based on unit 5 (Little's Law). <em>1–2 weeks.</em> First step: log arrival rate, p50 latency and in-flight requests every second. Measure: % error between predicted and measured concurrency at 3 load levels.</li>
-<li><strong>JavaScript: EventChat.</strong> Rebuild Ryan Dahl's single-threaded IRC-style chat server on Node's event loop, then spread it across worker processes with shared channel state. Based on "Deno is joining Cloudflare" (the IRC demo story). <em>2–3 weeks.</em> First step: a TCP chat server under 200 lines with a load generator. Measure: connected clients at which p99 message delivery passes 100 ms, for 1 process vs. N.</li>
-<li><strong>Go: pprofd.</strong> Add Cloudflare-style on-demand CPU and heap profiling to Wal-Kv and the capstone: an admin endpoint takes a 5-second profile, saves it, and compares it with the previous run. Based on "Introducing on-demand CPU and memory profiling with flamegraphs". <em>2 weeks.</em> First step: an authenticated <code>/debug/profile?seconds=5</code> that writes a <code>.pprof</code> file. Measure: % throughput drop while a profile is running.</li>
-<li><strong>Java: JBloom.</strong> Port sbloom to Java as a generic <code>BloomFilter&lt;T&gt;</code> with a pluggable hasher, then compare it with the Go version. Based on unit 5 (generics). <em>1–2 weeks.</em> First step: a <code>BloomFilter&lt;T&gt;</code> interface plus a <code>Funnel&lt;T&gt;</code>-style key encoder. Measure: ns per insert and false-positive rate at 1M keys, Java vs. Go.</li>
-</ul>
-<h2>Papers, one per domain</h2>
-<ul>
-<li><strong>Compilers:</strong> <a href="https://tdop.github.io/">Vaughan Pratt, "Top Down Operator Precedence" (1973)</a>. The original paper behind Pratt parsing, where each token carries a binding power. Read it now because it's your current unit, and FilterQL is built on it.</li>
-<li><strong>Infrastructure:</strong> <a href="https://queue.acm.org/detail.cfm?id=2898444">Burns et al., "Borg, Omega, and Kubernetes" (ACM Queue 2016)</a>. Google's lessons from ten years of running containers, from cgroups to pods and control loops. Read it now because it connects this week's namespaces and cgroups to the Kubernetes autoscaling in your capstone.</li>
-<li><strong>Backend:</strong> <a href="https://queue.acm.org/detail.cfm?id=2187821">Pat Helland, "Idempotence Is Not a Medical Condition" (ACM Queue 2012)</a>. Messages arrive "zero or more times", so every retried request has to be safe to process twice. Read it now because it explains the reasoning behind the idempotency-key unit and IdemPay.</li>
-<li><strong>Databases:</strong> <a href="https://db.cs.cmu.edu/papers/2022/cidr2022-p13-crotty.pdf">Crotty, Leis and Pavlo, "Are You Sure You Want to Use MMAP in Your Database Management System?" (CIDR 2022)</a>. Benchmarks and failure cases showing why databases manage their own buffer pool instead of relying on the OS. Read it now because the buffer pool is your current unit, and it's from the CMU 15-445 group.</li>
-<li><strong>Terminals:</strong> <a href="https://dsf.berkeley.edu/cs262/unix.pdf">Ritchie and Thompson, "The UNIX Time-Sharing System" (1974)</a>. The original description of Unix processes, fork/exec, pipes and the shell. Read it now because job control and signals make more sense once you've seen the process model they were built on.</li>
-<li><strong>Frontend:</strong> <a href="https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/wang_xiao">Wang et al., "Demystifying Page Load Performance with WProf" (NSDI 2013)</a>. It traces how JS, CSS and network dependencies form the critical path of a page load. Read it now because it shows with data why shipping less blocking JavaScript speeds up pages.</li>
-<li><strong>Reinforcement learning:</strong> <a href="https://link.springer.com/article/10.1007/BF00115009">Richard Sutton, "Learning to Predict by the Methods of Temporal Differences" (Machine Learning, 1988)</a>. The paper that introduced TD learning, which updates a prediction using the next prediction instead of waiting for the final outcome. Read it now because TD is your current unit.</li>
-<li><strong>Napkin math:</strong> <a href="https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf">John D. C. Little, "Little's Law as Viewed on Its 50th Anniversary" (Operations Research 2011)</a>. Little himself explains L = λW, why it holds so broadly, and how it's used in practice. Read it now because it's your current unit and the basis of LittleScaler.</li>
-<li><strong>JavaScript:</strong> <a href="https://www.usenix.org/legacy/events/hotos03/tech/full_papers/vonbehren/vonbehren.pdf">von Behren, Condit and Brewer, "Why Events Are A Bad Idea (for high-concurrency servers)" (HotOS 2003)</a>. A short argument that lightweight threads can match event loops without callback-style code. Read it now as the counter-argument to the event-loop unit, and to Node's design in the Deno post.</li>
-<li><strong>Go:</strong> <a href="https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf">C. A. R. Hoare, "Communicating Sequential Processes" (CACM 1978)</a>. The paper that proposed processes talking over synchronous channels, which Go's goroutines and channels come from. Read it now because goroutines and channels are your current unit.</li>
-<li><strong>Java:</strong> <a href="https://homepages.inf.ed.ac.uk/wadler/gj/Documents/gj-oopsla.pdf">Bracha, Odersky, Stoutamire and Wadler, "Making the future safe for the past: Adding Genericity to the Java Programming Language" (OOPSLA 1998)</a>. The GJ design that became Java generics, including why type erasure was chosen. Read it now because generics and erasure are your current unit.</li>
-</ul>
-<pre><code class="language-bash">python3 tools/news.py &quot;2026-10-09T08:45:31+05:30&quot; &gt; /tmp/news.json   # run 2026-10-11T02:29:27+05:30
-python3 tools/progress.py check issues/2026-10-11-0230.md
-tools/title.sh /tmp/drop_urls.txt     # + WebFetch for queue.acm.org, springer
-</code></pre>
-<p><a href="#top">Top</a></p><h1 id="d2026-10-09">2026-10-09 08:42 IST</h1>
-<h1>Daily engineering plan — Day 4 · Fri 9 Oct 2026</h1>
-<p>Same rule: write your prediction down before you run anything, then record the real number. The demo is 6 days out (15 Oct), so if time is short do Backend, Infrastructure and Databases first, and treat the project idea as a post-demo build.</p>
-<h2>Compilers — unit 4 of 12: recursive-descent parsing</h2>
-<p><strong>Learn:</strong> A recursive-descent parser is one function per grammar rule, calling other rules for nested constructs, and expression precedence comes from layering those functions (or from a Pratt-style binding-power loop). Learn how the parser recovers after a syntax error by synchronising on a statement boundary, because most production parsers (Go, Clang, V8) are hand-written this way. Start with <a href="https://craftinginterpreters.com/parsing-expressions.html">Crafting Interpreters, "Parsing Expressions"</a>.</p>
-<ul>
-<li><a href="https://eli.thegreenplace.net/2012/08/02/parsing-expressions-by-precedence-climbing">Eli Bendersky, "Parsing expressions by precedence climbing"</a> walks through the precedence-climbing algorithm that recursive-descent expression parsers use, and points at Clang's own <code>ParseExpression</code> as a real example.</li>
-<li><a href="https://www.youtube.com/watch?v=0c8b7YfsBKs">Core Dumped, "This Simple Algorithm Powers Real Interpreters: Pratt Parsing"</a> is a short video that shows how Pratt's nud/led loop parses the same expressions with binding powers instead of a deep function-per-precedence tower.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, write a recursive-descent (or Pratt) parser for <code>+ - * /</code> and parentheses over yesterday's AST nodes, parse <code>-123 * (45.67)</code>, predict the exact Lisp-style print of the tree and how many recursive calls <code>parse</code> makes, then check both in a test.</p>
-<h2>Infrastructure — unit 4 of 12: DNS</h2>
-<p><strong>Learn:</strong> DNS has recursive resolvers that walk from the root to an authoritative nameserver, cache answers for a TTL, and speak a small set of record types (A, AAAA, CNAME, NS, MX, TXT) over a simple wire format. "It's always DNS" is a useful default, and Kubernetes service discovery is just DNS with short TTLs. Start with <a href="https://implement-dns.wizardzines.com/">Julia Evans, "Implement DNS in a weekend"</a>.</p>
-<ul>
-<li><a href="https://jvns.ca/blog/2021/12/06/dns-doesn-t-propagate/">Julia Evans, "DNS \"propagation\" is actually caches expiring"</a> explains why updates look slow: authoritative servers answer immediately, and the wait is only for cached records (and negative NXDOMAIN caches) to expire.</li>
-<li><a href="https://www.youtube.com/watch?v=tsxjNsFu_2g">RubyConf Mini 2022, "Learning DNS" (Julia Evans)</a> is her keynote on learning hard systems by chasing one concrete DNS failure at a time, including how SOA MINIMUM sets negative-cache TTLs.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, write a tiny UDP DNS client that sends one A query (or follow the zine for a weekend resolver), predict the TTL and the number of nameservers <code>dig +trace example.com</code> will contact, then compare against <code>dig example.com</code> and <code>dig +trace</code> on your laptop.</p>
-<h2>Backend — unit 4 of 12: authentication and sessions</h2>
-<p><strong>Learn:</strong> A session is usually an opaque random ID in a cookie, looked up in server-side store, and the cookie needs <code>HttpOnly</code>, <code>Secure</code> and a sensible <code>SameSite</code>. Learn fixation (accepting a pre-set session ID), hijacking, rotation on login, and why long-lived JWTs in <code>localStorage</code> are a poor stand-in for sessions — this is the bug class that hits student projects hardest. Start with <a href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html">OWASP Session Management Cheat Sheet</a>.</p>
-<ul>
-<li><a href="https://ianlondon.github.io/posts/dont-use-jwts-for-sessions/">Ian London, "Please Don't Use JSON Web Tokens for Browser Sessions"</a> argues that JWTs in <code>localStorage</code> lose cookie protections, and that an <code>HttpOnly</code> JWT cookie is just a session cookie with extra steps.</li>
-<li><a href="https://news.ycombinator.com/item?id=11895440">HN: "Don't use JSON web tokens for sessions"</a> is a 147-comment thread on the same claim, including people asking how to keep a REST API "stateless" and answers pointing at refresh tokens plus short-lived access tokens.</li>
-</ul>
-<p><strong>Exercise:</strong> Add cookie sessions to paymentbooking (or a tiny Go login handler): random session ID, server map, <code>HttpOnly; Secure; SameSite=Lax</code>, rotate the ID on login, predict whether a stolen pre-login cookie still works after login and whether <code>document.cookie</code> can read it, then verify both in the browser.</p>
-<h2>Databases — unit 4 of 12: log-structured storage</h2>
-<p><strong>Learn:</strong> Log-structured storage appends every write, keeps an in-memory index to the latest value (Bitcask's keydir), and reclaims space with compaction; LSM trees add sorted SSTables, memtables and leveled/tiered merges. This is the design behind Wal-Kv, RocksDB and Cassandra. Watch <a href="https://www.youtube.com/watch?v=IHtVWGhG0Xg">CMU 15-445 F24 Lecture 04, "Log-Structured Merge Trees &amp; Tuples"</a> and skim <a href="https://riak.com/assets/bitcask-intro.pdf">Sheehy &amp; Smith, "Bitcask" (PDF)</a>.</p>
-<ul>
-<li><a href="https://healeycodes.com/implementing-bitcask-a-log-structured-hash-table">Andrew Healey, "Implementing Bitcask, a Log-Structured Hash Table"</a> builds a Bitcask-style store end to end: append-only data files, an in-memory keydir, and a merge that produces hint files.</li>
-<li><a href="https://engineering.fb.com/2013/11/21/core-infra/under-the-hood-building-and-open-sourcing-rocksdb/">Meta Engineering, "Under the Hood: Building and open-sourcing RocksDB"</a> is the original RocksDB announcement and explains why Facebook built an LSM embeddable store for flash and fast servers.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, add a crude keydir (key → file offset) on top of Wal-Kv's append log, predict Get latency with and without the index for 100k keys, measure both, then delete half the keys and predict how much a full-file rewrite compaction would reclaim before measuring the live-byte fraction.</p>
-<h2>Terminals — unit 4 of 12: text wrangling: grep, sed, awk</h2>
-<p><strong>Learn:</strong> <code>grep</code> filters lines, <code>sed</code> edits streams with substitutions, and <code>awk</code> splits fields and aggregates — chained with <code>sort</code>/<code>uniq</code> they answer log questions without a program. Regex capture groups and field variables (<code>$1</code>, <code>$NF</code>) are the tools you will use on every deploy and benchmark runbook. Start with <a href="https://missing.csail.mit.edu/2020/data-wrangling/">MIT Missing Semester, "Data Wrangling"</a>.</p>
-<ul>
-<li><a href="https://jvns.ca/blog/2022/12/07/tips-for-analyzing-logs/">Julia Evans, "Tips for analyzing logs"</a> shows practical pipelines: <code>grep -v</code> noise, <code>awk</code> to print selected fields as a table, and <code>grep -o | sort | uniq -c | sort -n</code> for quick histograms.</li>
-<li><a href="https://www.youtube.com/watch?v=sz_dsktIjt4">Missing Semester, "Lecture 4: Data Wrangling (2020)"</a> is the lecture that walks through grep/sed/awk on real SSH logs, including sed capture groups and awk field filters.</li>
-</ul>
-<p><strong>Exercise:</strong> Take a Wal-Kv or paymentbooking log (or generate 10k request lines), predict the top 3 status codes and the p50 latency from a one-liner, then measure with a <code>grep | awk | sort | uniq -c</code> pipeline and write the exact command you used.</p>
-<h2>Frontend design &amp; performance — unit 4 of 12: optimising LCP</h2>
-<p><strong>Learn:</strong> Largest Contentful Paint breaks into TTFB, resource-load delay, resource load time and render delay, and each piece has different fixes (faster origin, discoverable hero image, compression, no late CSS). Fixing LCP is the usual answer when a page "feels slow" on first load. Start with <a href="https://web.dev/articles/optimize-lcp">web.dev, "Optimize Largest Contentful Paint"</a>.</p>
-<ul>
-<li><a href="https://csswizardry.com/2022/03/optimising-largest-contentful-paint/">CSS Wizardry, "Optimising Largest Contentful Paint"</a> is a practitioner guide to discovering the LCP element early, preloading it, and avoiding lazy-load and fade-in traps that push paint out.</li>
-<li><a href="https://developer.chrome.com/docs/performance/insights/lcp-breakdown">Chrome for Developers, "LCP breakdown"</a> shows how DevTools splits LCP into the four sub-parts so you can see which phase is actually dominating.</li>
-</ul>
-<p><strong>Exercise:</strong> On a test page with a large hero image, record Lighthouse LCP on Slow 4G, predict which of the four sub-parts is largest, confirm in the Performance panel, then add <code>fetchpriority="high"</code> (and remove lazy-loading) and predict the new LCP before measuring again.</p>
-<h2>Reinforcement learning — unit 4 of 12: dynamic programming</h2>
-<p><strong>Learn:</strong> When the MDP model is known, dynamic programming can compute exact values: policy evaluation fills in (v_\pi), policy improvement makes the policy greedy, policy iteration alternates them, and value iteration truncates evaluation to one sweep with a max over actions. This is the clean baseline before any sample-based learning. Watch <a href="https://www.youtube.com/watch?v=Nd1-UUMVfz4">David Silver, Lecture 3: Planning by Dynamic Programming</a>.</p>
-<ul>
-<li><a href="http://www.incompleteideas.net/sutton/book/ebook/node40.html">Sutton &amp; Barto, "4. Dynamic Programming"</a> is the textbook chapter that defines policy evaluation, improvement and iteration from the Bellman equations.</li>
-<li><a href="http://www.incompleteideas.net/sutton/book/ebook/node44.html">Sutton &amp; Barto, "4.4 Value Iteration"</a> shows how value iteration folds improvement into a single max backup, plus the gambler's-problem example.</li>
-</ul>
-<p><strong>Exercise:</strong> In Python, implement value iteration on a 4×4 GridWorld (or yesterday's 4-state MDP) with known transitions, predict the number of sweeps until (\max_s |\Delta V(s)| &lt; 10^{-3}) and which corner state finishes with the highest value, then check both against policy iteration on the same MDP.</p>
-<h2>Napkin math — unit 4 of 10: memory bandwidth and caches</h2>
-<p><strong>Learn:</strong> RAM is accessed in cache lines (usually 64 B), sequential access hits hardware prefetch and open DRAM rows, and random access pays a full miss; per-core bandwidth is a hard ceiling that explains why arrays beat linked lists. Start with <a href="https://people.freebsd.org/~lstewart/articles/cpumemory.pdf">Ulrich Drepper, "What Every Programmer Should Know About Memory" (PDF)</a> (the Forrest Smith napkin post was already in Day 2).</p>
-<ul>
-<li><a href="https://lwn.net/Articles/252125/">LWN, "Memory part 2: CPU caches"</a> is Drepper's serialised chapter on cache organisation, cache lines and what a miss costs.</li>
-<li><a href="https://lwn.net/Articles/255364/">LWN, "Memory part 5: What programmers can do"</a> turns that into concrete advice: layout for sequential access, avoid random pointer chasing, and measure with real bandwidth numbers.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, time a sequential sum over a 256 MB <code>[]int64</code> versus the same sum over a pointer-linked list of the same values, predict the bandwidth (GB/s) and the slowdown factor from the Drepper/LWN numbers, then measure and write how far off you were.</p>
-<h2>JavaScript — unit 4 of 12: the DOM and events</h2>
-<p><strong>Learn:</strong> The DOM is a tree of nodes you query and mutate, and events travel capture → target → bubble, which is why one listener on a parent can handle many children (delegation). This is what React abstracts, and you need it for performance work that touches real elements. Start with <a href="https://javascript.info/document">javascript.info, "Document"</a> and <a href="https://javascript.info/events">javascript.info, "Introduction to Events"</a>.</p>
-<ul>
-<li><a href="https://javascript.info/bubbling-and-capturing">javascript.info, "Bubbling and capturing"</a> covers the three phases, <code>event.target</code> vs <code>event.currentTarget</code>, and <code>stopPropagation</code>.</li>
-<li><a href="https://javascript.info/event-delegation">javascript.info, "Event delegation"</a> shows why one parent handler plus <code>closest</code> scales better than a listener per row.</li>
-</ul>
-<p><strong>Exercise:</strong> Build a 1000-row list where clicks toggle a <code>.selected</code> class, predict how many listeners and how long the first click takes with one listener per row versus one delegated listener on the parent, then measure both with <code>performance.now()</code> after adding the rows.</p>
-<h2>Go — unit 4 of 12: errors</h2>
-<p><strong>Learn:</strong> Go treats errors as values you return and check, wrap with <code>fmt.Errorf("...: %w", err)</code>, and unwrap with <code>errors.Is</code> / <code>errors.As</code>; sentinel errors and small typed errors beat string matching. This is "fail loudly with typed failures" in Go form. Start with <a href="https://go.dev/blog/error-handling-and-go">Go blog, "Error handling and Go"</a> and <a href="https://go.dev/blog/go1.13-errors">Go blog, "Working with Errors in Go 1.13"</a>.</p>
-<ul>
-<li><a href="https://dave.cheney.net/2016/04/27/dont-just-check-errors-handle-them-gracefully">Dave Cheney, "Don't just check errors, handle them gracefully"</a> argues for adding context at each return and for deciding whether the caller can usefully handle the failure.</li>
-<li><a href="https://go.dev/wiki/ErrorValueFAQ">Go Wiki, "Error Values: Frequently Asked Questions"</a> is the official FAQ on when to use <code>%w</code> vs <code>%v</code>, sentinels, and <code>errors.Is</code>/<code>As</code>.</li>
-</ul>
-<p><strong>Exercise:</strong> In Wal-Kv (or a tiny <code>Store</code>), define a sentinel <code>ErrNotFound</code> and a typed <code>CorruptError</code>, wrap them through two layers with <code>%w</code>, predict which of <code>errors.Is</code>, <code>errors.As</code> and <code>==</code> succeed for each returned error, then check all six cases in a table-driven test.</p>
-<h2>Java — unit 4 of 12: exceptions</h2>
-<p><strong>Learn:</strong> Java splits exceptions into checked (must catch or declare) and unchecked (<code>RuntimeException</code> and errors), try-with-resources closes <code>AutoCloseable</code>s automatically, and good APIs reserve checked exceptions for recoverable conditions. Contrast this with Go's errors-as-values from today's Go unit. Start with <a href="https://dev.java/learn/language/annotations-exceptions/exceptions/">Dev.java, "Exceptions"</a>.</p>
-<ul>
-<li><a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/catchOrDeclare.html">Oracle tutorial, "The Catch or Specify Requirement"</a> is the official rule for which exceptions the compiler forces you to handle.</li>
-<li><a href="https://www.baeldung.com/java-try-with-resources">Baeldung, "Java – Try with Resources"</a> shows try-with-resources, suppressed exceptions, and custom <code>AutoCloseable</code> examples.</li>
-</ul>
-<p><strong>Exercise:</strong> Write a line-counter that opens a file with try-with-resources, declare a checked <code>BadFileException</code> for unreadable input and an unchecked <code>NegativeCountException</code> for a logic bug, predict which methods must declare <code>throws</code> and whether a suppressed close exception appears when the body also throws, then verify with a missing file and a deliberately failing close.</p>
-<hr />
-<h2>Project idea</h2>
-<p><strong>MergeKV: Bitcask merge and hint files for Wal-Kv</strong> (about 4–5 weeks at 12 hrs/week, start after the demo).</p>
-<p><strong>Goal:</strong> Add Bitcask-style compaction to Wal-Kv: rotate append files, keep a keydir of live offsets, merge immutable files into compacted data + hint files, and measure space amplification and Get latency against today's uncompacted log.</p>
-<p><strong>Why it's worth it:</strong> It turns today's log-structured unit and Wal-Kv into a real storage story next to PageKV — "append-only engine with merge/hint recovery" is exactly what interviewers expect from a Bitcask/LSM reading list.</p>
-<p><strong>Milestones:</strong>
-- Week 1: freeze a Wal-Kv baseline (1M keys, 100-byte values, 50% overwrites), record log bytes on disk and p99 Get, and sketch the on-disk record layout.
-- Week 2: add file rotation and an in-memory keydir rebuilt by scanning data files on open; crash mid-write and prove recovery.
-- Week 3: implement merge over immutable files that writes a compacted data file plus a hint file, and delete obsolete inputs safely.
-- Week 4: benchmark live-byte ratio and Get p99 before/after merge at 50% and 90% overwrite rates, and write a one-page comparison with PageKV's goals.</p>
-<p><strong>First step this week:</strong> Only the baseline harness and one recorded pre-compaction run on current Wal-Kv (about 2 hours), so it does not steal demo time.</p>
-<p><strong>The one number:</strong> live bytes / total log bytes after 1M writes with 50% overwrites, before and after the first merge.</p>
-<p><strong>References:</strong>
-- <a href="https://github.com/basho/bitcask">basho/bitcask</a> is the original Erlang Bitcask implementation the paper describes, useful to skim once your keydir works.
-- <a href="https://skyzh.github.io/mini-lsm/">Mini-LSM</a> is a week-by-week teaching LSM you can read after merge works if you want the sorted-SSTable path next.</p>
-<hr />
-<h2>News from the engineering blogs</h2>
-<ul>
-<li><a href="https://blog.cloudflare.com/radar-redesign/">Cloudflare, "Bridging technical depth and usability: The story behind Radar's redesign"</a> (8 Oct) explains how they redesigned Cloudflare Radar with an interactive map and shared components so non-specialists can still reach global traffic and outage data.</li>
-<li><a href="https://blog.bytebytego.com/p/how-software-boundaries-are-the-most">ByteByteGo, "How Software Boundaries Are The Most Important Skill for Developers"</a> (8 Oct) argues that drawing the right system boundaries matters more than most implementation choices as a codebase grows.</li>
-<li><a href="https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal">Pragmatic Engineer, "The Pulse: new trend of building \"internal vibe-coding apps\" at tech companies"</a> (8 Oct) covers companies shipping internal AI coding apps, plus a short take on whether engineers chase hard problems or promotion-shaped ones.</li>
-<li><a href="https://www.uber.com/us/en/blog/building-ubers-redlining-agent/">Uber, "Scaling AI in Legal: Building Uber's Redlining Agent"</a> (8 Oct) describes an agentic workflow that helps Uber's legal team review contracts faster and flag risks during negotiation.</li>
-<li>Nothing new from Pinterest, Google Developers, Google Research, Meta, Netflix, Airbnb, Stripe, Discord, Slack or GitHub; Google Cloud had only Gemini marketing posts (skipped); every feed loaded fine.</li>
-</ul>
-<pre><code class="language-bash"># Key commands used to produce this issue
-python3 tools/progress.py status
-# news already at /tmp/news.json from ~2026-10-09T08:45:31+05:30
-python3 tools/progress.py check issues/2026-10-09.md   # → no repeats
-grep -oE '\(https?://[^) ]+\)' issues/2026-10-09.md | tr -d '()' | sort -u &gt; /tmp/issue_urls.txt
-tools/yt.sh /tmp/issue_yt.txt
-tools/title.sh /tmp/issue_other.txt
-# incompleteideas.net blocks curl → verified via WebFetch
-python3 tools/progress.py record issues/2026-10-09.md 2026-10-09 2026-10-09T08:45:31+05:30
-</code></pre>
-<p><a href="#top">Top</a></p><h1 id="d2026-10-08">2026-10-08 08:42 IST</h1>
-<h1>Daily engineering plan — Day 3 · Thu 8 Oct 2026</h1>
-<p>Same rule: write your prediction down before you run anything, then record the real number. The demo is 7 days out (15 Oct), so if time is short do Backend, Infrastructure and Napkin math first, and treat the project idea at the end as something to start properly after the demo.</p>
-<h2>Compilers — unit 3 of 12: grammars and ASTs</h2>
-<p><strong>Learn:</strong> A context-free grammar describes which token sequences are valid programs, written as rules in BNF, and an ambiguous grammar is one where the same input can be parsed into two different trees. The parser's output is an abstract syntax tree (AST), a tree of typed nodes that every later pass reads and rewrites, so the shape of your node types matters. Start with <a href="https://craftinginterpreters.com/representing-code.html">Crafting Interpreters, "Representing Code"</a>.</p>
-<ul>
-<li><a href="https://ruslanspivak.com/lsbasi-part7/">Let's Build A Simple Interpreter, Part 7: Abstract Syntax Trees</a> continues the calculator series by turning its parser's output into an AST and walking that tree to evaluate expressions.</li>
-<li><a href="https://eli.thegreenplace.net/2009/02/16/abstract-vs-concrete-syntax-trees">Eli Bendersky, "Abstract vs. Concrete Syntax Trees"</a> shows the same expression as a full parse tree and as an AST, so you can see exactly which nodes an AST drops.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, define AST node types for expressions (literal, unary, binary, grouping) and a printer that prints them in Lisp-style prefix form, hand-build the tree for <code>-123 * (45.67)</code>, predict the exact printed string and the number of nodes, then check both in a test.</p>
-<h2>Infrastructure — unit 3 of 12: sockets and TCP</h2>
-<p><strong>Learn:</strong> A server socket is created, bound to a port, put into listening mode, and then <code>accept</code> hands back one new socket per client after the TCP three-way handshake finishes. Learn the difference between blocking and non-blocking I/O, because it decides whether one thread can serve many connections, and this is the API tcp_next and every proxy sits on. Start with <a href="https://beej.us/guide/bgnet/">Beej's Guide to Network Programming</a>.</p>
-<ul>
-<li><a href="https://blog.cloudflare.com/syn-packet-handling-in-the-wild/">Cloudflare, "SYN packet handling in the wild"</a> explains the two kernel queues behind <code>listen</code> (the SYN queue and the accept queue), what the backlog number really limits, and how to see both queues with <code>ss</code>.</li>
-<li><a href="https://news.ycombinator.com/item?id=26100075">HN: "Beej's Guide to Network Programming (1994-2020)"</a> has people who learned sockets from the guide, including one who says the API only made sense after learning the protocols first.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, write a TCP echo server with <code>net.Listen</code> and one goroutine per connection (or reuse tcp_next), predict how many short-lived connections per second a client loop can open and close on localhost, measure it, then run <code>ss -tan state time-wait | wc -l</code> and compare against your predicted TIME_WAIT count.</p>
-<h2>Backend — unit 3 of 12: stateless services and configuration</h2>
-<p><strong>Learn:</strong> The Twelve-Factor rules say config lives in the environment, processes keep no local state between requests, databases and queues are attached backing services, and a process can start fast and shut down cleanly at any time. Those four properties are exactly what makes a service safe to autoscale and restart, which is the heart of your capstone. Start with <a href="https://12factor.net/">The Twelve-Factor App</a>.</p>
-<ul>
-<li><a href="https://medium.com/@kelseyhightower/12-fractured-apps-1080c73d481c">Kelsey Hightower, "12 Fractured Apps"</a> walks through a Go service that crashes when its config file or database is missing, and fixes it in the app itself with defaults, env-var overrides and connection retries with backoff.</li>
-<li><a href="https://news.ycombinator.com/item?id=37857544">HN: "The Twelve-Factor App (2011)"</a> is a 250-comment discussion where people agree with most of the rules but describe them being applied too rigidly, plus a case of fitting WordPress into them.</li>
-</ul>
-<p><strong>Exercise:</strong> Move every hard-coded setting in paymentbooking (or the capstone service) into environment variables and add a SIGTERM handler that stops accepting work and drains in-flight requests, predict how many requests fail when you kill it mid-load, then measure that number with a load loop before and after the change.</p>
-<h2>Databases — unit 3 of 12: disk-oriented storage, pages and tuples</h2>
-<p><strong>Learn:</strong> A disk-oriented database stores tables in files split into fixed-size pages, and a slotted page keeps a small array of slots at the front that point to tuples packed in from the back. Learn the header, the slot array, the tuple layout and how a heap file finds free space, because every index and buffer pool later works in units of pages. Watch <a href="https://www.youtube.com/watch?v=dSxV5Sob5V8">CMU 15-445 F24 Lecture 03, "Database Storage: Files &amp; Pages"</a> and skim <a href="https://www.sqlite.org/arch.html">SQLite, "Architecture of SQLite"</a>.</p>
-<ul>
-<li><a href="https://www.postgresql.org/docs/current/storage-page-layout.html">PostgreSQL docs, "Database Page Layout"</a> gives the real byte layout of a Postgres page: the 24-byte header, the line pointer array, free space, and the tuples at the end.</li>
-<li><a href="https://www.sqlite.org/fileformat.html">SQLite, "Database File Format"</a> is the official description of a SQLite file, from the 100-byte database header to the B-tree pages and their cell pointer arrays.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, write a 4 KB slotted page with a header (slot count, free-space offset), a slot array growing forward and records written from the end, predict how many 100-byte records fit, check it with a test, then delete every other record and predict whether a new 150-byte record fits without compacting.</p>
-<h2>Terminals — unit 3 of 12: shell scripting and tools</h2>
-<p><strong>Learn:</strong> Shell scripts are variables, exit codes, conditionals, functions and globs glued around other programs, and <code>find</code>, <code>fd</code> and <code>rg</code> are how you locate files and code fast. Learn quoting and how <code>$?</code> and <code>set -e</code> behave, since most script bugs come from those, and you'll use this for benchmark and deploy runbooks. Start with <a href="https://missing.csail.mit.edu/2020/shell-tools/">MIT Missing Semester, "Shell Tools and Scripting"</a>.</p>
-<ul>
-<li><a href="https://google.github.io/styleguide/shellguide.html">Google Shell Style Guide</a> is Google's rulebook for shell scripts, including when a script has grown too big and should be rewritten in another language.</li>
-<li><a href="https://github.com/koalaman/shellcheck">ShellCheck</a> is a static analysis tool that flags quoting mistakes and other common shell bugs, and its README has a gallery of the problems it catches.</li>
-</ul>
-<p><strong>Exercise:</strong> Write a bash script with <code>set -euo pipefail</code>, a function and arguments with defaults that runs Wal-Kv's benchmark (or yesterday's strace test) N times and prints the median, predict how many ShellCheck warnings your first draft gets, then run <code>shellcheck</code> and fix each one.</p>
-<h2>Frontend design &amp; performance — unit 3 of 12: Core Web Vitals and measurement</h2>
-<p><strong>Learn:</strong> The three Core Web Vitals are Largest Contentful Paint (when the main content appears), Interaction to Next Paint (how fast the page responds to input) and Cumulative Layout Shift (how much things jump around). Lab data comes from a controlled run like Lighthouse, field data comes from real users, and the two often disagree, so learn which one you are looking at. Start with <a href="https://web.dev/articles/vitals">web.dev, "Web Vitals"</a> and <a href="https://developer.chrome.com/docs/lighthouse/overview">Chrome, "Introduction to Lighthouse"</a>.</p>
-<ul>
-<li><a href="https://web.dev/articles/lab-and-field-data-differences">web.dev, "Why lab and field data can be different"</a> explains why a Lighthouse score and real-user numbers diverge (devices, networks, caching, user behaviour) and what to do about it.</li>
-<li><a href="https://github.com/GoogleChrome/web-vitals">GoogleChrome/web-vitals</a> is the small official JavaScript library that measures LCP, INP and CLS in a real browser the same way Chrome reports them.</li>
-</ul>
-<p><strong>Exercise:</strong> Add the web-vitals library to your test page and log LCP, CLS and INP to the console, predict how far Lighthouse's lab LCP on Slow 4G will be from what you log on your own machine, compare the two, then add an image without width and height and predict the CLS before measuring it.</p>
-<h2>Reinforcement learning — unit 3 of 12: Markov decision processes and Bellman equations</h2>
-<p><strong>Learn:</strong> An MDP adds states to the bandit: actions move you between states and give rewards, and a discount factor makes near rewards worth more than far ones. The state-value and action-value functions say how good a state or action is under a policy, and the Bellman equations write each value in terms of the next state's value, which every later algorithm tries to solve. Watch <a href="https://www.youtube.com/watch?v=lfHX2hHRMVQ">David Silver, Lecture 2: Markov Decision Processes</a>.</p>
-<ul>
-<li><a href="https://huggingface.co/learn/deep-rl-course/unit2/two-types-value-based-methods">Hugging Face Deep RL Course, "Two types of value-based methods"</a> explains the state-value and action-value functions with small grid examples.</li>
-<li><a href="https://huggingface.co/learn/deep-rl-course/unit2/bellman-equation">Hugging Face Deep RL Course, "The Bellman Equation"</a> shows how the Bellman equation replaces summing a whole episode's rewards with one reward plus the discounted value of the next state.</li>
-</ul>
-<p><strong>Exercise:</strong> In Python, write a 4-state MDP with discount 0.9, compute the value of each state under a random policy by solving the Bellman expectation equations as a linear system with NumPy, predict which state has the highest value before you solve it, then check against a Monte Carlo average over 10,000 episodes.</p>
-<h2>Napkin math — unit 3 of 10: storage devices and I/O</h2>
-<p><strong>Learn:</strong> Hard disks, SATA SSDs, NVMe drives and network-attached cloud disks differ by orders of magnitude in latency, and IOPS (operations per second) is a different limit from throughput (bytes per second). <code>fsync</code> is slow because it waits for the device to confirm the data is durable, which sets the ceiling for Wal-Kv writes and Postgres commits. Start with <a href="https://planetscale.com/blog/io-devices-and-latency">Ben Dicken, "IO devices and latency" (PlanetScale)</a>.</p>
-<ul>
-<li><a href="https://codecapsule.com/2014/02/12/coding-for-ssds-part-2-architecture-of-an-ssd-and-benchmarking/">Emmanuel Goossaert, "Coding for SSDs, Part 2: Architecture of an SSD and Benchmarking"</a> explains what is inside an SSD (NAND pages and blocks, the controller) and how to benchmark one without fooling yourself.</li>
-<li><a href="https://news.ycombinator.com/item?id=43355031">HN: "IO Devices and Latency"</a> has the article's author on how the interactive visuals were built, and a thread on running SQLite on local NVMe to avoid scaling out.</li>
-</ul>
-<p><strong>Exercise:</strong> Using the article's numbers, predict how many 4 KB writes per second your laptop's SSD can do with an <code>fsync</code> after every write and without, then measure both with <code>fio</code> (or a Go loop over Wal-Kv's write path) and write down how far off each guess was.</p>
-<h2>JavaScript — unit 3 of 12: objects, <code>this</code> and prototypes</h2>
-<p><strong>Learn:</strong> Every JavaScript object has a hidden link to a prototype object, and property lookups walk that chain until they find a match, which is how methods are shared. The value of <code>this</code> is decided by how a function is called, not where it is defined, and <code>class</code> is mostly a cleaner syntax for the same prototype mechanism. Start with <a href="https://javascript.info/prototype-inheritance">javascript.info, "Prototypal inheritance"</a>.</p>
-<ul>
-<li><a href="https://javascript.info/object-methods">javascript.info, "Object methods, \"this\""</a> covers how <code>this</code> is set in methods and why arrow functions don't get their own.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain">MDN, "Inheritance and the prototype chain"</a> is the reference explanation of the chain, the ways to build one, and how classes map onto it.</li>
-</ul>
-<p><strong>Exercise:</strong> Build the same two-level object hierarchy three ways (constructor function with a prototype, <code>Object.create</code>, and <code>class</code>), predict what <code>this</code> is when a method is called normally, after being copied into a variable, inside an arrow function and inside <code>setTimeout</code>, then run it in Node and check each prediction.</p>
-<h2>Go — unit 3 of 12: interfaces</h2>
-<p><strong>Learn:</strong> A Go type satisfies an interface just by having its methods, with no <code>implements</code> keyword, and an interface value is two words: a pointer to type information and a pointer to the data. That is why an interface holding a nil pointer is not itself nil, and why small interfaces make code easy to test with fakes. Start with <a href="https://research.swtch.com/interfaces">Russ Cox, "Go Data Structures: Interfaces"</a>.</p>
-<ul>
-<li><a href="https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go">Jordan Orelli, "How to use interfaces in Go"</a> covers the empty interface, why <code>[]string</code> is not a <code>[]interface{}</code>, and pointer versus value receivers, with real examples from JSON and HTTP.</li>
-<li><a href="https://go.dev/doc/faq#nil_error">Go FAQ, "Why is my nil error value not equal to nil?"</a> is the official short explanation of the nil-pointer-inside-an-interface trap.</li>
-</ul>
-<p><strong>Exercise:</strong> Define a small <code>Store</code> interface (Get and Put) for Wal-Kv, write an in-memory version and a fake that always fails, use both in a table-driven test, then predict whether an interface holding a nil <code>*memStore</code> compares equal to nil and what <code>unsafe.Sizeof</code> reports for an interface value, and check both.</p>
-<h2>Java — unit 3 of 12: classes, objects, interfaces and records</h2>
-<p><strong>Learn:</strong> A Java class bundles fields, constructors and methods, access modifiers control what other code can see, and interfaces define behaviour that many classes can implement. Records (Java 16+) are short, immutable data classes whose constructor, accessors, <code>equals</code>, <code>hashCode</code> and <code>toString</code> are generated for you. Start with <a href="https://dev.java/learn/language/oop/classes-objects/">Dev.java, "Classes and Objects"</a> and <a href="https://dev.java/learn/language/oop/interfaces/">Dev.java, "Interfaces"</a>.</p>
-<ul>
-<li><a href="https://openjdk.org/jeps/395">JEP 395: Records</a> is the official proposal that made records final in Java 16, with the reasoning behind each restriction.</li>
-<li><a href="https://openjdk.org/projects/amber/design-notes/records-and-sealed-classes">Brian Goetz, "Data Classes and Sealed Types for Java"</a> is the design note by Java's language architect explaining why records are "nominal tuples" rather than a way to cut boilerplate.</li>
-</ul>
-<p><strong>Exercise:</strong> Rewrite your WordCount result as a <code>record WordCount(String word, int count)</code> and add a <code>Counter</code> interface with a HashMap and a TreeMap implementation, predict what <code>equals</code> and <code>toString</code> print for two records with the same fields versus two plain-class objects with the same fields, then time both counters on the 50 MB file.</p>
-<hr />
-<h2>Project idea</h2>
-<p><strong>PageKV: a page-based storage engine next to Wal-Kv</strong> (about 4–5 weeks at 12 hrs/week, start after the demo).</p>
-<p><strong>Goal:</strong> Build a second storage engine for Wal-Kv that keeps data in 4 KB slotted pages with a buffer pool, serve both engines over a small TCP protocol, and measure which wins for which workload.</p>
-<p><strong>Why it's worth it:</strong> It turns today's slotted-page, <code>fsync</code>, TCP and Go-interface exercises into one system, and "I built a log-structured engine and a page-based engine and benchmarked them" is a strong storage-engineering story for interviews.</p>
-<p><strong>Milestones:</strong>
-- Week 1: put Wal-Kv behind a <code>Store</code> interface and write a fixed benchmark (1 million keys, 100-byte values, 90% reads), then record its baseline numbers before writing anything new.
-- Week 2: build the heap file of slotted pages with Get, Put and Delete, plus a crash test that kills the process mid-write.
-- Week 3: add a buffer pool with LRU or clock eviction and page pinning, and measure the hit rate as you shrink the pool.
-- Week 4: serve both engines through a GET/PUT text protocol on your TCP server, benchmark them over the network, and write a one-page comparison.</p>
-<p><strong>First step this week:</strong> Only the benchmark harness for today's Wal-Kv and one recorded baseline run (about 2 hours), so it doesn't take time from the demo.</p>
-<p><strong>The one number:</strong> p99 Get latency at 1 million keys, PageKV against the Wal-Kv baseline.</p>
-<p><strong>References:</strong>
-- <a href="https://github.com/cmu-db/bustub">cmu-db/bustub</a> is the teaching database from CMU 15-445, whose buffer pool and page projects follow the same order as these milestones.
-- <a href="https://github.com/etcd-io/bbolt">etcd-io/bbolt</a> is a production embedded key-value store in Go built on fixed-size pages and a B+tree, useful to read once your own pages work.</p>
-<hr />
-<h2>News from the engineering blogs</h2>
-<ul>
-<li><a href="https://research.google/blog/does-better-work-always-mean-better-workers/">Google Research, "Does better work always mean better workers?"</a> (8 Oct) reports a three-month trial with 133 patent lawyers where AI raised everyone's draft quality, but only senior lawyers got better at unassisted work, which is a good reason to do these exercises yourself.</li>
-<li><a href="https://cloud.google.com/blog/topics/financial-services/ultra-low-latency-solution-with-u4-enables-high-velocity-trading/">Google Cloud, "Ultra Low Latency Solution with U4"</a> (7 Oct) announces general availability of the U4 machine family with an ultra-low-latency network built for high-frequency trading.</li>
-<li><a href="https://blog.cloudflare.com/agentic-security-operations/">Cloudflare, "Building an evidence-grounded agentic security operations harness"</a> (7 Oct) describes AI agents on Workers that triage security alerts, with evidence collection kept deterministic and separate from the model's reasoning.</li>
-<li><a href="https://blog.bytebytego.com/p/how-uber-built-a-genie-to-answer">ByteByteGo, "How Netflix Taught an LLM to Recommend Movies So That You Keep Watching"</a> (7 Oct) explains how Netflix built GenRec, its LLM-based recommender.</li>
-<li><a href="https://newsletter.pragmaticengineer.com/p/building-resilient-systems-with-sam">Pragmatic Engineer, "Building resilient systems with Sam Newman"</a> (7 Oct) is a podcast episode on when microservices make sense and how to build resilient distributed systems.</li>
-<li>Nothing new from Pinterest, Google Developers, Meta, Netflix, Airbnb, Stripe, Discord, Slack, GitHub or Uber, and every feed loaded fine.</li>
-</ul>
-<p><a href="#top">Top</a></p><h1 id="d2026-10-07">2026-10-07 08:42 IST</h1>
-<h1>Daily engineering plan — Day 2 · Wed 7 Oct 2026</h1>
-<p>Same rule as yesterday: write your prediction down before you run anything, then record the real number. Your demo is 8 days out (15 Oct), so if time is tight do Napkin math, Infrastructure and Backend first, since all three map straight onto the capstone.</p>
-<h2>Compilers — unit 2 of 12: scanning (lexing)</h2>
-<p><strong>Learn:</strong> A scanner reads characters one at a time and groups them into tokens, each with a type, the matching text (the lexeme), an optional literal value and a line number. It is a small hand-written state machine, and the same skill parses log lines, wire protocols and config files. Start with <a href="https://craftinginterpreters.com/scanning.html">Crafting Interpreters, "Scanning"</a>, then watch <a href="https://www.youtube.com/watch?v=HxaD_trXwRE">Rob Pike, "Lexical Scanning in Go"</a> for the Go-flavoured version that uses a state function and a channel of tokens.</p>
-<ul>
-<li><a href="https://ruslanspivak.com/lsbasi-part2/">Let's Build A Simple Interpreter, Part 2</a> extends the Part 1 calculator so its lexer skips whitespace and reads multi-digit integers, and defines the term "lexeme".</li>
-<li><a href="https://news.ycombinator.com/item?id=21626972">HN: "Writing An Interpreter In Go (2016)"</a> has the book's author explaining why he hand-writes the lexer and parser instead of using a parser generator, and others pointing out that generated parsers tend to give worse error messages.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, write a scanner for a tiny language with identifiers, integers, double-quoted strings, <code>= + - ( )</code> and line comments, predict the token count for a 10-line sample file, then check it with a table-driven test that also expects an error with the right line number for an unterminated string.</p>
-<h2>Infrastructure — unit 2 of 12: processes, syscalls and the OS</h2>
-<p><strong>Learn:</strong> A process is a running program with its own address space, and the only way it can touch files, the network or other processes is by asking the kernel through system calls. Switching between processes (a context switch) and crossing into the kernel both cost time, which is why containers, pods and autoscaling are really just processes with limits and a scheduler. Start with <a href="https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf">OSTEP, "The Abstraction: The Process" (PDF)</a>.</p>
-<ul>
-<li><a href="https://jvns.ca/blog/2016/10/04/exec-will-eat-your-brain/">Julia Evans, "What happens when you start a process on Linux?"</a> explains how a new process is created with <code>fork</code> and then replaced with <code>exec</code>, and how every process sits in one process tree.</li>
-<li><a href="https://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html">Brendan Gregg, "strace Wow Much Syscall"</a> shows that strace pauses the traced program twice per system call, measures how badly that slows a syscall-heavy program, and warns against running it in production.</li>
-</ul>
-<p><strong>Exercise:</strong> Run a small Go program that appends 10,000 records to a file (or Wal-Kv's write path) under <code>strace -c -f</code>, once with an <code>fsync</code> per record and once with a single <code>fsync</code> at the end, predicting the <code>write</code> and <code>fsync</code> counts and the wall-clock gap before you look.</p>
-<h2>Backend — unit 2 of 12: API design</h2>
-<p><strong>Learn:</strong> Resource-oriented design names things as nouns in a hierarchy (<code>/users/{id}/bookings</code>) and acts on them with a few standard methods: List, Get, Create, Update and Delete. Learn how good APIs handle errors, pagination with page tokens, and versioning, because these choices are very hard to change once clients depend on them. Start with the <a href="https://docs.cloud.google.com/apis/design">Google Cloud API design guide</a>.</p>
-<ul>
-<li><a href="https://opensource.zalando.com/restful-api-guidelines/">Zalando RESTful API and Event Guidelines</a> is another company's full public rulebook, useful to compare against Google's on naming, errors and pagination.</li>
-<li><a href="https://www.youtube.com/watch?v=aAb7hSCtvGw">Joshua Bloch, "How To Design A Good API and Why it Matters"</a> is a Google Tech Talk on general API design rules from the designer of the Java Collections framework.</li>
-</ul>
-<p><strong>Exercise:</strong> Write a one-page resource spec for paymentbooking's bookings (List, Get, Create, one error format), implement List in Go with <code>page_size</code> and an opaque <code>page_token</code>, predict how many calls it takes to page through 1,000 bookings at a size of 50, and add a test that inserts a booking mid-pagination to check nothing is skipped or repeated.</p>
-<h2>Databases — unit 2 of 12: modern SQL</h2>
-<p><strong>Learn:</strong> Past basic SELECT and JOIN, the high-value tools are aggregates with GROUP BY, window functions (which compute across related rows without collapsing them), CTEs with WITH, and lateral joins. These let Postgres do in one query what you would otherwise write as loops in Go. Watch <a href="https://www.youtube.com/watch?v=MzigBKf84aY">CMU 15-445 F24 Lecture 02, "Modern SQL"</a>.</p>
-<ul>
-<li><a href="https://jvns.ca/blog/2019/10/03/sql-queries-don-t-start-with-select/">Julia Evans, "SQL queries don't start with SELECT"</a> explains the logical order a query runs in (FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY, LIMIT), which explains why you can't filter on a window function in WHERE.</li>
-<li><a href="https://www.postgresql.org/docs/current/tutorial-window.html">PostgreSQL docs, "Window Functions" tutorial</a> is the short official introduction to <code>OVER</code>, <code>PARTITION BY</code> and running totals.</li>
-</ul>
-<p><strong>Exercise:</strong> Load 100,000 fake payments into Postgres, then write one query using a CTE and window functions that returns each user's top 3 payments with a running total, predict the number of rows it returns before running it, and compare its <code>EXPLAIN ANALYZE</code> time against a version built from GROUP BY and a self-join.</p>
-<h2>Terminals — unit 2 of 12: shell basics and pipes</h2>
-<p><strong>Learn:</strong> The shell runs programs, and redirection (<code>&gt;</code>, <code>&lt;</code>, <code>2&gt;</code>) and pipes (<code>|</code>) connect their input and output so small tools combine into bigger ones. Learn paths, exit codes, permissions and how to read a pipeline left to right, since every later terminal unit builds on this. Start with <a href="https://missing.csail.mit.edu/2020/course-shell/">MIT Missing Semester, "Course overview + the shell"</a> and its <a href="https://www.youtube.com/watch?v=Z56Jmr9Z34Q">lecture video</a>.</p>
-<ul>
-<li><a href="https://github.com/jlevy/the-art-of-command-line">The Art of Command Line</a> is a one-page list of practical shell tips, from basics like redirection to everyday text-processing tools; read the "Basics" and "Everyday use" sections today.</li>
-<li><a href="https://www.youtube.com/watch?v=tc4ROCJYbm0">AT&amp;T Archives, "The UNIX Operating System"</a> is a 1982 film in which Kernighan and others explain the idea of small programs connected with pipes.</li>
-</ul>
-<p><strong>Exercise:</strong> Build a pipeline from only <code>tr</code>, <code>sort</code>, <code>uniq -c</code>, <code>sort -rn</code> and <code>head</code> that prints the ten most frequent words in a text file, predict whether it or yesterday's <code>WordCount.java</code> will be faster on a 50 MB file, then time both with <code>time</code>.</p>
-<h2>Frontend design &amp; performance — unit 2 of 12: the critical rendering path</h2>
-<p><strong>Learn:</strong> The browser builds the DOM from HTML and the CSSOM from CSS, combines them into a render tree, then does layout and paint. CSS blocks rendering and a plain <code>&lt;script&gt;</code> blocks the HTML parser, so the order and size of those resources decide when anything appears on screen. Start with <a href="https://web.dev/learn/performance/understanding-the-critical-path">web.dev, "Understand the critical path"</a>.</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Critical_rendering_path">MDN, "Critical rendering path"</a> is a short reference for each step from DOM to paint and what you can optimise in each.</li>
-<li><a href="https://csswizardry.com/2018/11/css-and-network-performance/">Harry Roberts, "CSS and Network Performance"</a> gives concrete fixes for render-blocking CSS, such as inlining critical CSS, splitting stylesheets by media type and avoiding <code>@import</code>.</li>
-</ul>
-<p><strong>Exercise:</strong> Take yesterday's test page, add a 200 KB stylesheet, predict how much later first contentful paint will land on a throttled "Slow 4G" profile, measure it, then inline only the above-the-fold CSS and measure again.</p>
-<h2>Reinforcement learning — unit 2 of 12: multi-armed bandits and exploration</h2>
-<p><strong>Learn:</strong> A bandit is RL with one state: you repeatedly pick one of k actions, each with an unknown average reward, and must balance exploiting the best-looking action against exploring the others. Learn sample-average action values, epsilon-greedy, optimistic initial values and UCB, which is the core of most A/B testing systems. Read chapter 2 of Sutton &amp; Barto (the book linked yesterday) and skim the <a href="https://huggingface.co/learn/deep-rl-course/unit0/introduction">Hugging Face Deep RL Course introduction</a>.</p>
-<ul>
-<li><a href="https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/">Lilian Weng, "The Multi-Armed Bandit Problem and Its Solutions"</a> compares epsilon-greedy, UCB and Thompson sampling on one page, with the regret definitions behind them.</li>
-<li><a href="https://www.youtube.com/watch?v=sGuiWX07sKw">David Silver, Lecture 9: Exploration and Exploitation</a> is the lecture from yesterday's course that covers bandits, regret and UCB in depth.</li>
-</ul>
-<p><strong>Exercise:</strong> In Python, build the 10-armed testbed from chapter 2 and run epsilon-greedy with epsilon 0, 0.01 and 0.1 over 2,000 runs of 1,000 steps, predicting which epsilon has the highest average reward at step 1,000, then plot the curves and check.</p>
-<h2>Napkin math — unit 2 of 10: the method, estimate then measure</h2>
-<p><strong>Learn:</strong> Napkin math means breaking a question into a few steps and multiplying base rates (memory, disk and network speeds, syscall costs) to get a number within roughly 10x before you build anything. Then you run one benchmark to check it, and the gap teaches you which base rate you got wrong. Start with <a href="https://github.com/sirupsen/napkin-math">Simon Eskildsen's napkin-math repo</a> and his talk <a href="https://www.youtube.com/watch?v=IxkSlnrRFqc">Advanced Napkin Math (SREcon19)</a>.</p>
-<ul>
-<li><a href="https://www.forrestthewoods.com/blog/memory-bandwidth-napkin-math/">Forrest Smith, "Memory Bandwidth Napkin Math"</a> asks how long it takes to sum one billion 32-bit integers, then benchmarks sequential and random access to find the real bounds.</li>
-<li><a href="https://www.youtube.com/watch?v=modXC5IWTJI">Jeff Dean, "Building Software Systems At Google and Lessons Learned" (Stanford)</a> includes his "numbers everyone should know" slide and shows how he uses them for back-of-the-envelope design estimates.</li>
-</ul>
-<p><strong>Exercise:</strong> Estimate, step by step on paper, how many requests per second one instance of your capstone's Go service can handle if each request does one indexed Postgres read, then load-test it with <code>hey</code> or <code>wrk</code> and write down which step of your estimate was furthest off.</p>
-<h2>JavaScript — unit 2 of 12: scope and closures</h2>
-<p><strong>Learn:</strong> JavaScript uses lexical scope, so a function sees the variables of the place where it was written, and <code>let</code> and <code>const</code> are block-scoped while <code>var</code> is function-scoped. A closure is a function that keeps access to those outer variables after the outer function returns, which is how callbacks, React hooks and module patterns hold state. Start with <a href="https://javascript.info/closure">javascript.info, "Variable scope, closure"</a>.</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures">MDN, "Closures"</a> covers lexical scoping, practical closures and the classic bug of creating closures in a loop.</li>
-<li><a href="https://www.youtube.com/watch?v=vKJpN5FAeF4">Fireship, "Closures Explained in 100 Seconds"</a> is a short video on what closures are and the interview questions built around them.</li>
-</ul>
-<p><strong>Exercise:</strong> Predict the output of a loop that schedules five <code>setTimeout</code> callbacks with <code>var i</code> and then with <code>let i</code>, run both in Node, then write <code>once(fn)</code> and <code>memoize(fn)</code> using closures and test them with <code>node:test</code>.</p>
-<h2>Go — unit 2 of 12: slices and maps internals</h2>
-<p><strong>Learn:</strong> A slice is a small header holding a pointer to a backing array, a length and a capacity, so two slices can share memory and an <code>append</code> may or may not copy. Maps are hash tables whose iteration order is deliberately randomised. These two facts cause many subtle Go bugs and extra allocations. Start with <a href="https://go.dev/blog/slices-intro">Go blog, "Go Slices: usage and internals"</a> and <a href="https://go.dev/blog/maps">Go blog, "Go maps in action"</a>.</p>
-<ul>
-<li><a href="https://go.dev/blog/slices">Go blog, "Arrays, slices (and strings): The mechanics of 'append'"</a> builds <code>append</code> by hand to show exactly when capacity grows and when the backing array is shared.</li>
-<li><a href="https://go.dev/blog/swisstable">Go blog, "Faster Go maps with Swiss Tables"</a> explains the new map implementation that shipped in Go 1.24 and why it is faster than the old bucket design.</li>
-</ul>
-<p><strong>Exercise:</strong> Predict the capacity after each <code>append</code> while growing an empty <code>[]int</code> to 2,000 elements, then log the real values and allocations with <code>testing.AllocsPerRun</code>, and write a failing test that reproduces an aliasing bug where appending to one slice changes another, then make it pass.</p>
-<h2>Java — unit 2 of 12: language basics</h2>
-<p><strong>Learn:</strong> Java has eight primitive types with fixed sizes, the usual operators and control flow, arrays with a fixed length, and <code>String</code> as an immutable object rather than a primitive. Coming from Go and C++, watch for integer overflow wrapping silently, <code>==</code> comparing references on objects, and <code>char</code> being a 16-bit number. Start with <a href="https://dev.java/learn/language/constructs/basics/">Dev.java, "Java Language Basics"</a>.</p>
-<ul>
-<li><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">The Java Tutorials, "Primitive Data Types"</a> lists every primitive's size, range and default value, plus how literals are written.</li>
-<li><a href="https://www.youtube.com/watch?v=eIrMbAQSU34">Programming with Mosh, "Java Full Course for Beginners"</a> is a long beginner course; watch only the sections on types, operators and control flow.</li>
-</ul>
-<p><strong>Exercise:</strong> Write a single-file <code>Basics.java</code> that prints <code>Integer.MAX_VALUE + 1</code>, <code>7 / 2</code>, <code>'a' + 1</code>, <code>0.1 + 0.2</code> and <code>new String("hi") == "hi"</code>, write your predictions first, run it with <code>java Basics.java</code>, and note which results differ from Go.</p>
-<hr />
-<h2>News from the engineering blogs</h2>
-<ul>
-<li><a href="https://blog.cloudflare.com/root-ksk-2024-rollover/">Cloudflare, "The keys to the Internet change on October 11. Are you ready?"</a> (6 Oct) explains that the DNS root switches to a new signing key on 11 Oct and how to test whether your resolver is ready, which ties into the DNS hop from yesterday's infra unit.</li>
-<li><a href="https://medium.com/airbnb-engineering/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb-cea7ee9b1ab2">Airbnb, "Beyond synthetic testing: Capturing and replaying real database workloads at Airbnb"</a> (6 Oct) describes capturing production MySQL traffic at ProxySQL and replaying it offline for load tests and the 5.7 to 8.0 upgrade.</li>
-<li><a href="https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/">GitHub, "Building Git infrastructure for agent-scale development"</a> (6 Oct) explains why GitHub is separating durable storage from compute in its Git backend, because adding read replicas was slowing every push.</li>
-<li><a href="https://engineering.fb.com/2026/10/06/production-engineering/nts-authenticated-time-at-meta/">Meta, "NTS: Authenticated Time at Meta"</a> (6 Oct) covers Meta's public time service adding Network Time Security, so clients can verify time packets, with servers that keep no per-client state.</li>
-<li><a href="https://cloud.google.com/blog/products/databases/simplify-ai-search-with-alloydb-hybrid-search-and-rrf/">Google Cloud, "AlloyDB: A unified database engine for hybrid search"</a> (6 Oct) shows AlloyDB combining vector and full-text search in a single SQL query.</li>
-<li><a href="https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756">Pinterest, "Metrics Board: Building an Agent-ready Metrics Layer"</a> (6 Oct) describes defining each metric once as a YAML spec that generates its own pipeline, quality checks and dashboards.</li>
-<li><a href="https://blog.bytebytego.com/p/why-llms-agree-with-you-even-when">ByteByteGo, "Why LLMs Agree With You Even When You're Wrong"</a> (6 Oct) explains how training rewards for helpful, likeable answers push models toward agreeing with users, a real-world case of reward design from today's RL topic.</li>
-<li><a href="https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in">Pragmatic Engineer, "The state of the tech industry in 2026"</a> (6 Oct) is the video and summary of Gergely Orosz's LDX3 New York keynote on what has changed in the industry.</li>
-<li>Google Research and Google Cloud also posted a few other items (geospatial health models, an MCP Toolbox Java SDK, a Spanner-backed Iceberg catalog, GKE inference networking) that I left out. Nothing new from Google Developers, Netflix, Stripe, Discord, Slack or Uber, and every feed loaded fine.</li>
-</ul>
-<p><a href="#top">Top</a></p><h1 id="d2026-10-06">2026-10-06 08:42 IST</h1>
-<h1>Daily engineering plan — Day 1 · Tue 6 Oct 2026</h1>
-<p>One unit per topic, two matched reads, one small build. Rule for every exercise: write your prediction down before you run anything, then record the real number. If time is short before your 15 Oct demo, do Napkin math, Infrastructure and Databases first, because they feed straight into the capstone.</p>
-<h2>Compilers — unit 1 of 12: the map of a language implementation</h2>
-<p><strong>Learn:</strong> A language implementation is a pipeline: the scanner turns characters into tokens, the parser builds a syntax tree, and later passes check, optimise and then either run the tree or generate code. Learn the names of each stage and how compilers, interpreters, transpilers and JITs differ in where that pipeline stops. Start with <a href="https://craftinginterpreters.com/a-map-of-the-territory.html">Crafting Interpreters, "A Map of the Territory"</a>.</p>
-<ul>
-<li><a href="https://ruslanspivak.com/lsbasi-part1/">Let's Build A Simple Interpreter, Part 1</a> builds a tiny calculator interpreter in Python that tokenizes and evaluates an expression like <code>3+5</code>.</li>
-<li><a href="https://news.ycombinator.com/item?id=27997167">HN: "Crafting Interpreters is available in print"</a> has the author answering questions, and readers describe working through the tree-walker and bytecode-VM halves.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, write a calculator that tokenizes and evaluates <code>+</code> and <code>-</code> over multi-digit integers left to right, with a table-driven test that includes one invalid character.</p>
-<h2>Infrastructure — unit 1 of 12: the request path, end to end</h2>
-<p><strong>Learn:</strong> Follow one request from typing a URL to seeing the page: DNS lookup, TCP handshake, TLS, HTTP request, load balancer, server, response and rendering. Every later infra topic, from DNS to Kubernetes, is one hop on this path. Start with <a href="https://github.com/alex/what-happens-when">alex/what-happens-when</a>.</p>
-<ul>
-<li><a href="https://hpbn.co/primer-on-latency-and-bandwidth/">HPBN, "Primer on Latency and Bandwidth"</a> explains where the time goes on each hop: propagation, transmission, processing and queueing delay.</li>
-<li><a href="https://news.ycombinator.com/item?id=8902105">HN discussion of "What happens when you type google.com…"</a> includes interviewers explaining how they use this question to test whether you can explain a system clearly, not recite every step.</li>
-</ul>
-<p><strong>Exercise:</strong> Write a Go program that uses <code>net/http/httptrace</code> to print how long DNS, TCP connect, TLS and time-to-first-byte take for a URL you pass in, then compare three sites.</p>
-<h2>Backend — unit 1 of 12: HTTP fundamentals</h2>
-<p><strong>Learn:</strong> HTTP is a text protocol of requests (method, path, headers, optional body) and responses (status code, headers, body), and each request stands alone. Learn what the common methods and status codes mean, and how HTTP/1.1 added keep-alive connections. Start with <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview">MDN, "Overview of HTTP"</a>.</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Messages">MDN, "HTTP messages"</a> shows the exact layout of a request and a response, line by line.</li>
-<li><a href="https://jvns.ca/blog/2019/08/27/curl-exercises/">Julia Evans, "curl exercises"</a> is a list of small curl tasks that make you practise headers, methods and redirects by hand.</li>
-</ul>
-<p><strong>Exercise:</strong> Using only Go's <code>net</code> package (no <code>net/http</code>), write a server that parses the request line and headers and replies <code>200 OK</code> with the method and path echoed back, then test it with <code>curl -v</code>.</p>
-<h2>Databases — unit 1 of 12: the relational model and why DBMSs exist</h2>
-<p><strong>Learn:</strong> A relation is a set of tuples with a fixed schema, and relational algebra (select, project, join, union) is the small set of operators that every SQL query compiles into. Learn why databases separate the logical model from physical storage, because that is what lets the system change storage without breaking your queries. Watch <a href="https://www.youtube.com/watch?v=APqWIjtzNGE">CMU 15-445 Fall 2024, Lecture 01</a>.</p>
-<ul>
-<li><a href="https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78">Jaana Dogan, "Things I Wished More Developers Knew About Databases"</a> lists 17 practical lessons, from what ACID really promises to write skew and clock skew.</li>
-<li><a href="https://cstack.github.io/db_tutorial/">Let's Build a Simple Database</a> is a step-by-step tutorial that builds a small SQLite clone in C, starting from a REPL.</li>
-</ul>
-<p><strong>Exercise:</strong> In Go, implement <code>Select</code>, <code>Project</code> and <code>NaturalJoin</code> over slices of maps, then check that they give the same rows as the matching SQL query in SQLite or Postgres.</p>
-<h2>Terminals — unit 1 of 12: TTY, terminal, shell, pty</h2>
-<p><strong>Learn:</strong> The terminal emulator, the kernel's TTY layer with its line discipline, the pseudoterminal pair and the shell are four different things. The line discipline handles line editing and turns Ctrl-C into a signal, which is why programs behave differently in a pipe than in a terminal. Start with <a href="https://www.linusakesson.net/programming/tty/">Linus Åkesson, "The TTY demystified"</a>.</p>
-<ul>
-<li><a href="https://jvns.ca/blog/2022/07/20/pseudoterminals/">Julia Evans, "What happens when you press a key in your terminal?"</a> traces one keypress through the terminal emulator, the pty and the program.</li>
-<li><a href="https://news.ycombinator.com/item?id=13571055">HN: "The TTY demystified"</a> adds practical tips such as using <code>reset</code> when a program leaves your terminal in a broken mode.</li>
-</ul>
-<p><strong>Exercise:</strong> Write a Go program that prints coloured output only when stdout is a terminal (check with <code>golang.org/x/term</code>'s <code>IsTerminal</code>), and confirm it prints plain text when piped into <code>cat</code>.</p>
-<h2>Frontend design &amp; performance — unit 1 of 12: how the browser loads a page</h2>
-<p><strong>Learn:</strong> A modern browser splits work across processes (browser, renderer, GPU, network), and the renderer's main thread parses HTML, runs JavaScript, computes styles, does layout and paints. Learn what happens during a navigation, because every performance metric you meet later is a delay in one of these steps. Start with <a href="https://developer.chrome.com/blog/inside-browser-part1">Chrome, "Inside look at modern web browser (part 1)"</a>.</p>
-<ul>
-<li><a href="https://web.dev/articles/howbrowserswork">web.dev, "How browsers work"</a> is the classic long guide to parsing, the render tree, layout and painting.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work">MDN, "Populating the page: how browsers work"</a> is a shorter walk from DNS lookup to first paint, with the performance angle.</li>
-</ul>
-<p><strong>Exercise:</strong> Build a plain HTML page with one CSS file and one large script in <code>&lt;head&gt;</code>, record it in the DevTools Performance panel, then add <code>defer</code> to the script and compare when first paint happens.</p>
-<h2>Reinforcement learning — unit 1 of 12: the RL problem</h2>
-<p><strong>Learn:</strong> In RL an agent picks actions in an environment, gets a reward, and tries to maximise its total future reward (the return) rather than predict labels. Learn the words state, action, reward, policy, value function and model, and how this differs from supervised learning. Read <a href="http://incompleteideas.net/book/the-book-2nd.html">Sutton &amp; Barto, chapter 1</a> and watch <a href="https://www.youtube.com/watch?v=2pWv7GOvuf0">David Silver, Lecture 1</a>.</p>
-<ul>
-<li><a href="https://lilianweng.github.io/posts/2018-02-19-rl-overview/">Lilian Weng, "A (Long) Peek into Reinforcement Learning"</a> covers the main ideas and algorithm families on one page, with clear notation.</li>
-<li><a href="https://spinningup.openai.com/en/latest/spinningup/rl_intro.html">OpenAI Spinning Up, "Key Concepts in RL"</a> defines states, policies, trajectories, returns and value functions precisely.</li>
-</ul>
-<p><strong>Exercise:</strong> In Python, write a two-state, two-action environment with <code>reset()</code> and <code>step(action)</code> that returns <code>(state, reward, done)</code>, run a random agent for 1,000 episodes, and report the average return.</p>
-<h2>Napkin math — unit 1 of 10: latency numbers</h2>
-<p><strong>Learn:</strong> Memorise the rough orders of magnitude: L1 cache ~1 ns, main memory ~100 ns, SSD random read in the tens of microseconds, a round trip within a datacentre ~500 µs, and a cross-continent round trip ~150 ms. The point is the ratios between them, which tell you instantly whether a design is limited by memory, disk or network. Start with <a href="https://gist.github.com/jboner/2841832">the Latency Numbers gist</a> and <a href="https://colin-scott.github.io/personal_website/research/interactive_latency.html">Colin Scott's interactive version by year</a>.</p>
-<ul>
-<li><a href="https://samwho.dev/numbers/">Sam Rose, "Numbers"</a> is an interactive visual that makes the gaps between these latencies easy to feel.</li>
-<li><a href="https://news.ycombinator.com/item?id=4047623">HN: "Latency numbers every programmer should know"</a> has a useful argument that knowing how to measure these numbers matters more than memorising them.</li>
-</ul>
-<p><strong>Exercise:</strong> Write down estimates for reading 1 GB sequentially from RAM and doing 1 million random lookups in a Go map, then write Go benchmarks for both and record how far off you were.</p>
-<h2>JavaScript — unit 1 of 12: values, types and coercion</h2>
-<p><strong>Learn:</strong> JavaScript has seven primitive types plus objects, and operators like <code>+</code> and <code>==</code> quietly convert between them. Learn the coercion rules for <code>+</code>, <code>==</code> versus <code>===</code>, and truthy versus falsy values, because they explain most "JavaScript is weird" bugs. Start with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types">MDN, "Grammar and types"</a>.</p>
-<ul>
-<li><a href="https://javascript.info/types">javascript.info, "Data types"</a> explains each of the eight types and the <code>typeof</code> operator with short examples.</li>
-<li><a href="https://www.destroyallsoftware.com/talks/wat">Gary Bernhardt, "Wat"</a> is a famous four-minute talk that shows JavaScript and Ruby coercion surprises live.</li>
-</ul>
-<p><strong>Exercise:</strong> Predict the output of ten expressions such as <code>[] + {}</code>, <code>"5" - 2</code>, <code>null == 0</code> and <code>NaN === NaN</code>, then run them in Node and write a one-line rule for each one you got wrong.</p>
-<h2>Go — unit 1 of 12: idioms review</h2>
-<p><strong>Learn:</strong> You already write Go, so this unit tightens style: useful zero values, short names in small scopes, errors returned as values, <code>defer</code> for cleanup, and small interfaces. These idioms are what reviewers on Go projects check first. Start with <a href="https://go.dev/doc/effective_go">Effective Go</a>.</p>
-<ul>
-<li><a href="https://gobyexample.com/">Go by Example</a> is a set of short annotated programs for each language feature, handy for quick lookups.</li>
-<li><a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">Rob Pike, "Go Proverbs" (Gopherfest 2015)</a> explains the short sayings behind Go's design, such as "the bigger the interface, the weaker the abstraction".</li>
-</ul>
-<p><strong>Exercise:</strong> Pick one function in Wal-Kv or sbloom, refactor it to follow three Effective Go rules (naming, error returns, a useful zero value), and add a table-driven test for it.</p>
-<h2>Java — unit 1 of 12: first Java program and JShell</h2>
-<p><strong>Learn:</strong> Java compiles source into bytecode that runs on the JVM, and modern JDKs can run a single <code>.java</code> file directly without a separate compile step. Learn the difference between the JDK and the JVM, how <code>javac</code> and <code>java</code> work, and how to use JShell to try code interactively. Start with <a href="https://dev.java/learn/first-steps/first-java-code/">Dev.java, "Your first Java code"</a>.</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=l9AzO1FMgM8">Fireship, "Java in 100 Seconds"</a> gives a quick overview of what Java is, how it runs and where it is used.</li>
-<li><a href="https://dev.java/learn/first-steps/first-java-code/jshell-tool/">Dev.java, "JShell - The Java Shell Tool"</a> shows how to evaluate expressions, define methods and reload code in the REPL.</li>
-</ul>
-<p><strong>Exercise:</strong> Install JDK 21 or later, then write a single-file <code>WordCount.java</code> that reads stdin and prints the ten most frequent words using a <code>HashMap</code>, and run it with <code>java WordCount.java &lt; somefile.txt</code>.</p>
-<hr />
-<h2>News from the engineering blogs</h2>
-<ul>
-<li>Nothing new has been posted since this morning's 8:42 AM digest, which already covered Google Research, Google Cloud, Cloudflare and ByteByteGo.</li>
-<li><strong>Uber is readable again:</strong> their RSS feed is still broken, but their blog's listing page loads, so Uber posts will appear here from now on.</li>
-<li><a href="https://www.uber.com/us/en/blog/designing-mcp-gateway/">Uber, "Designing MCP Gateway: Uber's MCP Management Platform"</a> (1 Oct) describes a central platform for managing the MCP tool integrations that teams had been building separately for their AI agents.</li>
-<li><a href="https://www.uber.com/us/en/blog/protecting-against-retry-storms/">Uber, "How Uber Protects Against Retry Storms"</a> (17 Sep, catch-up) explains why retries multiply across deep service chains and what Uber built to stop them cascading, which ties into backend unit 7.</li>
-<li><a href="https://www.uber.com/us/en/blog/evolving-ubers-compute-platform/">Uber, "From One Horizontal Scaling Controller to Many"</a> (9 Sep, catch-up) covers several orchestrators safely scaling the same Kubernetes workload, which is close to your autoscaling capstone.</li>
-</ul>
 <p><a href="#top">Top</a></p><h1 id="big">Big projects</h1><h1>Big projects: 6 multi-month builds that combine your domains</h1>
 <p>Written 11 Oct 2026 (IST) for after the 15 Oct capstone demo. Sized for about 12 hours a week. A safe split is 8 hours on the project and 4 on the daily units.</p>
 <p><strong>How to use this.</strong> Do one project at a time. Each phase follows the mentor loop:
